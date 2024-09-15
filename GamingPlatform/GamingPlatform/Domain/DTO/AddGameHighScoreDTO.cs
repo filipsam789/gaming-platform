@@ -11,8 +11,8 @@ namespace IntegratedSystems.Domain.DTO
     {
         public Guid? GameId { get; set; }
         public Guid? UserId { get; set; }
-       public string? GameName { get; set; } 
-       
+        public string? GameName { get; set; } 
+        public string? PlayerName { get; set; }
         public int Score { get; set; }
         public DateTime DateAchieved { get; set; } = DateTime.Today;
     }

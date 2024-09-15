@@ -34,6 +34,8 @@ namespace Repository.Implementation
             {
                 return entities
                     .Include("Game")
+                    .Include("User")
+                    .Include("User.GamingPlatformUser")
                     .AsEnumerable();
             }
             else if (typeof(T).IsAssignableFrom(typeof(User)))
@@ -68,6 +70,8 @@ namespace Repository.Implementation
                 return entities
                     .Include("Game")
                     .Include("Game.Developer")
+                    .Include("User")
+                    .Include("User.GamingPlatformUser")
                     .First(s => s.Id == id);
             }
             else if (typeof(T).IsAssignableFrom(typeof(User)))

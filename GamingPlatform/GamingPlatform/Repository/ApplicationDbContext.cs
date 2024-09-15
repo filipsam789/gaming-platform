@@ -23,24 +23,6 @@ namespace Repository
         protected override void OnModelCreating(ModelBuilder builder)
        {
            base.OnModelCreating(builder);
-
-            //builder.Entity<GamingPlatformUser>()
-            //    .HasDiscriminator<string>("UserType")
-            //    .HasValue<GamingPlatformUser>("Base")
-            //    .HasValue<User>("User")
-            //    .HasValue<Developer>("Developer");
-
-            //builder.Entity<Developer>().HasData(
-            //    new Developer
-            //    {
-            //        Id = Guid.NewGuid().ToString(),
-            //        FirstName = "Test Developer",
-            //        Email = "test@developer.com",
-            //        ProgrammingLanguage = "En"
-            //
-            //    }
-            //);
-
         }
         
 

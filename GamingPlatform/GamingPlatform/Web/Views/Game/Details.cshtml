@@ -76,8 +76,11 @@ Layout = "~/Views/Shared/_Layout.cshtml";
                 </tbody>
             </table>
             <div class="text-center mt-4">
-                <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning" style="border-color: #ffcd39; background-color: #ffcd39; color: white;">Edit Game</a>
-                <a asp-action="Delete" asp-route-id="@Model.Id" class="btn btn-danger" style="border-color: darkred; background-color: darkred; color: white;">Delete Game</a>
+                @if (User.IsInRole("Developer"))
+                { 
+                    <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning" style="border-color: #ffcd39; background-color: #ffcd39; color: white;">Edit Game</a>
+                    <a asp-action="Delete" asp-route-id="@Model.Id" class="btn btn-danger" style="border-color: darkred; background-color: darkred; color: white;">Delete Game</a>
+                }
             </div>
 
             @if (User.IsInRole("User"))
@@ -116,13 +119,13 @@ Layout = "~/Views/Shared/_Layout.cshtml";
                         @i
                     </td>
                     <td>
-                        @Html.DisplayFor(modelItem => highScore.User.GamingPlatformUser.UserName)
+                        @Html.DisplayFor(modelItem => highScore.Score)
                     </td>
                     <td>
                         @highScore.DateAchieved.ToShortDateString()
                     </td>
                     <td>
-                        @highScore.UserId
+                        @highScore.User.GamingPlatformUser.UserName
                     </td>
                 </tr>
                 i++;

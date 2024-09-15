@@ -16,16 +16,6 @@ namespace IntegratedSystems.Domain.DomainModels
         public HighScore()
         {
         }
-
-        public HighScore(int score, DateTime dateAchieved, string userId, Guid gameId, Game game, User user)
-        {
-            Score = score;
-            DateAchieved = dateAchieved;
-            UserId = userId;
-            GameId = gameId;
-            User = user;
-            Game = game;
-        }
     }
 }
 

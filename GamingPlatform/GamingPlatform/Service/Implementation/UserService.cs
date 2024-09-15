@@ -32,9 +32,9 @@ namespace Service.Implementation
             return _userRepository.GetDevelopers().ToList();
         }
 
-        public GamingPlatformUser GetUserById(Guid? id)
+        public GamingPlatformUser GetPlatformUserById(string id)
         {
-            return _userRepository.Get(id?.ToString());
+            return _userRepository.Get(id);
         }
 
         public List<GamingPlatformUser> GetUsers()

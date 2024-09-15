@@ -167,11 +167,13 @@ namespace IntegratedSystems.Web.Controllers
         public IActionResult AddGameHighScore(Guid id)
         {
             var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            var player = _usersService.GetPlatformUserById(userId);
 
             AddGameHighScoreDTO model = new AddGameHighScoreDTO
             {
                 GameId = id,
                 UserId = Guid.Parse(userId),
+                PlayerName = player.FirstName,
                 GameName = _gameService.GetGameById(id).Name,
             };
 

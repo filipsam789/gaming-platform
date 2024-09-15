@@ -1,12 +1,9 @@
 {
   "version": 2,
-  "dgSpecHash": "f0ufE2uL/5/+TWrOfamtPvSSKYaqS5w2+F1eu9Bc4/HbpHTLf5LeWO1F9L1tSktnBeocJaVYR/vL3A6mF+yZyg==",
+  "dgSpecHash": "hoBi/6Afbp2SCFcORWiU4DzN7dVgWRXhnGPxlO0e1amvNBSpVkqWFaNz+HJ0PE9fZnWGtaP1d3wZoZAWfxL7vA==",
   "success": true,
   "projectFilePath": "C:\\Users\\filip\\OneDrive\\Documents\\GitHub\\gaming-platform\\GamingPlatform\\GamingPlatform\\Service\\Service.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\filip\\.nuget\\packages\\entityframework\\6.1.0\\entityframework.6.1.0.nupkg.sha512",
-    "C:\\Users\\filip\\.nuget\\packages\\microsoft.aspnet.identity.core\\2.2.4\\microsoft.aspnet.identity.core.2.2.4.nupkg.sha512",
-    "C:\\Users\\filip\\.nuget\\packages\\microsoft.aspnet.identity.entityframework\\2.2.4\\microsoft.aspnet.identity.entityframework.2.2.4.nupkg.sha512",
     "C:\\Users\\filip\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\8.0.2\\microsoft.aspnetcore.cryptography.internal.8.0.2.nupkg.sha512",
     "C:\\Users\\filip\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\8.0.2\\microsoft.aspnetcore.cryptography.keyderivation.8.0.2.nupkg.sha512",
     "C:\\Users\\filip\\.nuget\\packages\\microsoft.aspnetcore.diagnostics.entityframeworkcore\\8.0.2\\microsoft.aspnetcore.diagnostics.entityframeworkcore.8.0.2.nupkg.sha512",
@@ -38,36 +35,5 @@
     "C:\\Users\\filip\\.nuget\\packages\\system.text.encodings.web\\8.0.0\\system.text.encodings.web.8.0.0.nupkg.sha512",
     "C:\\Users\\filip\\.nuget\\packages\\system.text.json\\8.0.0\\system.text.json.8.0.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'EntityFramework 6.1.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0'. This package may not be fully compatible with your project.",
-      "libraryId": "EntityFramework",
-      "targetGraphs": [
-        "net8.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Microsoft.AspNet.Identity.Core 2.2.4' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0'. This package may not be fully compatible with your project.",
-      "libraryId": "Microsoft.AspNet.Identity.Core",
-      "targetGraphs": [
-        "net8.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Microsoft.AspNet.Identity.EntityFramework 2.2.4' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0'. This package may not be fully compatible with your project.",
-      "libraryId": "Microsoft.AspNet.Identity.EntityFramework",
-      "targetGraphs": [
-        "net8.0"
-      ]
-    }
-  ]
+  "logs": []
 }

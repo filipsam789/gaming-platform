@@ -1,10 +1,13 @@
 
-/GamingPlatform/.vs
-/GamingPlatform/Domain/bin
-/GamingPlatform/Domain/obj
-/GamingPlatform/Repository/bin
-/GamingPlatform/Repository/obj
-/GamingPlatform/Service/bin
-/GamingPlatform/Service/obj
-/GamingPlatform/Web/bin
-/GamingPlatform/Web/obj
+/GamingPlatform/GamingPlatform/.vs
+/GamingPlatform/GamingPlatform/Domain/bin
+/GamingPlatform/GamingPlatform/Domain/obj
+/GamingPlatform/GamingPlatform/Repository/bin
+/GamingPlatform/GamingPlatform/Repository/obj
+/GamingPlatform/GamingPlatform/Service/bin
+/GamingPlatform/GamingPlatform/Service/obj
+/GamingPlatform/GamingPlatform/Web/bin
+/GamingPlatform/GamingPlatform/Web/obj
+/GamingPlatform/GamingPlatform/.vs
+/GamingPlatform/.DS_Store
+.DS_Store

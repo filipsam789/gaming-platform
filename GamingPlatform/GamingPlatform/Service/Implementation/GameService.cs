@@ -71,7 +71,7 @@ namespace Service.Implementation
                 {
                     Score = gameHighScoreDTO.Score,
                     DateAchieved = gameHighScoreDTO.DateAchieved,
-                    UserId = gameHighScoreDTO.UserId.ToString(),
+                    UserId = gameHighScoreDTO.UserId,
                     GameId = game.Id
                 };
 

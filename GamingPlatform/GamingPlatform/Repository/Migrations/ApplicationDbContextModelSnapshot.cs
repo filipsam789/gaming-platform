@@ -76,7 +76,6 @@ namespace Repository.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("DeveloperId");
-                    b.HasIndex("DeveloperId");
 
                     b.ToTable("Games");
                 });
@@ -352,7 +351,6 @@ namespace Repository.Migrations
                 {
                     b.HasOne("IntegratedSystems.Domain.DomainModels.Developer", "Developer")
                         .WithMany("Games")
-                        .HasForeignKey("DeveloperId");
                         .HasForeignKey("DeveloperId");
 
                     b.Navigation("Developer");

@@ -57,7 +57,7 @@
                 <input asp-for="ReleaseDate" type="date" class="form-control" />
                 <span asp-validation-for="ReleaseDate" class="text-danger"></span>
             </div>
-            if (User.IsInRole("Developer"))
+            @if (User.IsInRole("Developer"))
             {
                 <input asp-for="DeveloperId" hidden value="@UserManager.GetUserId(User) " />
             }
