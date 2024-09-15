@@ -31,8 +31,10 @@ namespace IntegratedSystems.Web.Controllers
         // GET: HighScores
         public IActionResult Index()
         {
-            
-            return View(_highScoreService.GetHighScores());
+            var highScores = _highScoreService.GetHighScores()
+                .OrderByDescending(h => h.Score)
+                .ToList();
+            return View(highScores);
         }
 
         // GET: HighScores/Details/5
@@ -48,6 +50,8 @@ namespace IntegratedSystems.Web.Controllers
             {
                 return NotFound();
             }
+            
+            
 
             return View(highScore);
         }

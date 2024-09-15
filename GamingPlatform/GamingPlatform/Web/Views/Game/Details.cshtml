@@ -110,25 +110,26 @@ Layout = "~/Views/Shared/_Layout.cshtml";
                 </thead>
                 <tbody>
                 @{
-                var i = 1;
+                    var i = 1;
+                    var sortedHighScores = Model.HighScores.OrderByDescending(h => h.Score).ToList();
                 }
-                @foreach (var highScore in Model.HighScores)
+                @foreach (var highScore in sortedHighScores)
                 {
-                <tr>
-                    <td>
-                        @i
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => highScore.Score)
-                    </td>
-                    <td>
-                        @highScore.DateAchieved.ToShortDateString()
-                    </td>
-                    <td>
-                        @highScore.UserId
-                    </td>
-                </tr>
-                i++;
+                    <tr>
+                        <td>
+                            @i
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => highScore.Score)
+                        </td>
+                        <td>
+                            @highScore.DateAchieved.ToShortDateString()
+                        </td>
+                        <td>
+                            @highScore.UserId
+                        </td>
+                    </tr>
+                    i++;
                 }
                 </tbody>
 
