@@ -72,7 +72,6 @@ namespace IntegratedSystems.Web.Controllers
             {
                 game.Id = Guid.NewGuid();
                 var developer = _usersService.GetDeveloperById(game.DeveloperId.ToString());
-
                 game.Developer = developer;
                 _gameService.CreateNewGame(game);
                 return RedirectToAction(nameof(Index));

@@ -16,7 +16,7 @@ namespace IntegratedSystems.Domain.DomainModels
         public double Version { get; set; }
         public double Price { get; set; }
         public DateTime ReleaseDate { get; set; }
-        public Guid? DeveloperId { get; set; }
+        public Guid DeveloperId { get; set; }
         [ForeignKey("DeveloperId")]
         public Developer? Developer { get; set; }
         public ICollection<HighScore> HighScores { get; set; } = new List<HighScore>();
