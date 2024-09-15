@@ -17,6 +17,28 @@ namespace Repository.Migrations
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "8.0.4");
 
+            modelBuilder.Entity("IntegratedSystems.Domain.DomainModels.Developer", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("GamingPlatformUserId")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("ProgrammingLanguage")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("GamingPlatformUserId")
+                        .IsUnique();
+
+                    b.ToTable("Developers");
+                });
+
             modelBuilder.Entity("IntegratedSystems.Domain.DomainModels.Game", b =>
                 {
                     b.Property<Guid>("Id")
@@ -27,7 +49,7 @@ namespace Repository.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("DeveloperId")
+                    b.Property<Guid?>("DeveloperId")
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Genre")
@@ -54,6 +76,7 @@ namespace Repository.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("DeveloperId");
+                    b.HasIndex("DeveloperId");
 
                     b.ToTable("Games");
                 });
@@ -73,7 +96,7 @@ namespace Repository.Migrations
                     b.Property<int>("Score")
                         .HasColumnType("INTEGER");
 
-                    b.Property<string>("UserId")
+                    b.Property<Guid?>("UserId")
                         .HasColumnType("TEXT");
 
                     b.HasKey("Id");
@@ -83,6 +106,24 @@ namespace Repository.Migrations
                     b.HasIndex("UserId");
 
                     b.ToTable("HighScores");
+                });
+
+            modelBuilder.Entity("IntegratedSystems.Domain.DomainModels.User", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("GamingPlatformUserId")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("GamingPlatformUserId")
+                        .IsUnique();
+
+                    b.ToTable("Users");
                 });
 
             modelBuilder.Entity("IntegratedSystems.Domain.IdentityModels.GamingPlatformUser", b =>
@@ -98,6 +139,9 @@ namespace Repository.Migrations
 
                     b.Property<string>("ConcurrencyStamp")
                         .IsConcurrencyToken()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("DeveloperId")
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Email")
@@ -142,13 +186,11 @@ namespace Repository.Migrations
                     b.Property<bool>("TwoFactorEnabled")
                         .HasColumnType("INTEGER");
 
-                    b.Property<string>("UserName")
-                        .HasMaxLength(256)
+                    b.Property<string>("UserId")
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("UserType")
-                        .IsRequired()
-                        .HasMaxLength(13)
+                    b.Property<string>("UserName")
+                        .HasMaxLength(256)
                         .HasColumnType("TEXT");
 
                     b.HasKey("Id");
@@ -161,10 +203,6 @@ namespace Repository.Migrations
                         .HasDatabaseName("UserNameIndex");
 
                     b.ToTable("AspNetUsers", (string)null);
-
-                    b.HasDiscriminator<string>("UserType").HasValue("Base");
-
-                    b.UseTphMappingStrategy();
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
@@ -301,42 +339,20 @@ namespace Repository.Migrations
 
             modelBuilder.Entity("IntegratedSystems.Domain.DomainModels.Developer", b =>
                 {
-                    b.HasBaseType("IntegratedSystems.Domain.IdentityModels.GamingPlatformUser");
+                    b.HasOne("IntegratedSystems.Domain.IdentityModels.GamingPlatformUser", "GamingPlatformUser")
+                        .WithOne("Developer")
+                        .HasForeignKey("IntegratedSystems.Domain.DomainModels.Developer", "GamingPlatformUserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
-                    b.Property<string>("ProgrammingLanguage")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.HasDiscriminator().HasValue("Developer");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = "d6b98ae5-41cb-424f-b5c5-d90e7822ef39",
-                            AccessFailedCount = 0,
-                            ConcurrencyStamp = "bccc4df6-b76a-488f-ab63-79af797e4366",
-                            Email = "test@developer.com",
-                            EmailConfirmed = false,
-                            FirstName = "Test Developer",
-                            LockoutEnabled = false,
-                            PhoneNumberConfirmed = false,
-                            SecurityStamp = "4c73f236-32ff-4f4e-9401-3f9376dbc406",
-                            TwoFactorEnabled = false,
-                            ProgrammingLanguage = "En"
-                        });
-                });
-
-            modelBuilder.Entity("IntegratedSystems.Domain.DomainModels.User", b =>
-                {
-                    b.HasBaseType("IntegratedSystems.Domain.IdentityModels.GamingPlatformUser");
-
-                    b.HasDiscriminator().HasValue("User");
+                    b.Navigation("GamingPlatformUser");
                 });
 
             modelBuilder.Entity("IntegratedSystems.Domain.DomainModels.Game", b =>
                 {
                     b.HasOne("IntegratedSystems.Domain.DomainModels.Developer", "Developer")
                         .WithMany("Games")
+                        .HasForeignKey("DeveloperId");
                         .HasForeignKey("DeveloperId");
 
                     b.Navigation("Developer");
@@ -357,6 +373,17 @@ namespace Repository.Migrations
                     b.Navigation("Game");
 
                     b.Navigation("User");
+                });
+
+            modelBuilder.Entity("IntegratedSystems.Domain.DomainModels.User", b =>
+                {
+                    b.HasOne("IntegratedSystems.Domain.IdentityModels.GamingPlatformUser", "GamingPlatformUser")
+                        .WithOne("User")
+                        .HasForeignKey("IntegratedSystems.Domain.DomainModels.User", "GamingPlatformUserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("GamingPlatformUser");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -410,19 +437,26 @@ namespace Repository.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("IntegratedSystems.Domain.DomainModels.Game", b =>
-                {
-                    b.Navigation("HighScores");
-                });
-
             modelBuilder.Entity("IntegratedSystems.Domain.DomainModels.Developer", b =>
                 {
                     b.Navigation("Games");
                 });
 
+            modelBuilder.Entity("IntegratedSystems.Domain.DomainModels.Game", b =>
+                {
+                    b.Navigation("HighScores");
+                });
+
             modelBuilder.Entity("IntegratedSystems.Domain.DomainModels.User", b =>
                 {
                     b.Navigation("HighScores");
+                });
+
+            modelBuilder.Entity("IntegratedSystems.Domain.IdentityModels.GamingPlatformUser", b =>
+                {
+                    b.Navigation("Developer");
+
+                    b.Navigation("User");
                 });
 #pragma warning restore 612, 618
         }

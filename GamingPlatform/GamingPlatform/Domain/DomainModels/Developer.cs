@@ -8,9 +8,11 @@ using Microsoft.AspNetCore.Identity;
 
 namespace IntegratedSystems.Domain.DomainModels
 {
-    public class Developer : GamingPlatformUser
+    public class Developer : BaseEntity
     {
-        public string ProgrammingLanguage { get; set; }
-        public ICollection<Game> Games { get; set; } =  new List<Game>();
+        public virtual GamingPlatformUser GamingPlatformUser { get; set; }
+        public string GamingPlatformUserId { get; set; }
+        public string ProgrammingLanguage { get; set; } = string.Empty;
+        public ICollection<Game> Games { get; set; } = new List<Game>();
     }
 }

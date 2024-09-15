@@ -1,6 +1,8 @@
 ﻿using IntegratedSystems.Domain.DomainModels;
 
 using IntegratedSystems.Domain.DTO;
+using IntegratedSystems.Domain.IdentityModels;
+using Microsoft.AspNet.Identity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,10 +13,12 @@ namespace Service.Interface
 {
     public interface IUsersService
     {
-        public List<User> GetUsers();
-        public User GetUserById(Guid? id);
-        public User CreateNewUser(User user);
-        public User UpdateUser(User user);
-        public User DeleteUser(User user);
+        public List<GamingPlatformUser> GetUsers();
+        public List<Developer> GetDevelopers();
+        public GamingPlatformUser GetUserById(Guid? id);
+        public GamingPlatformUser CreateNewUser(GamingPlatformUser user);
+        public GamingPlatformUser UpdateUser(GamingPlatformUser user);
+        public GamingPlatformUser DeleteUser(GamingPlatformUser user);
+        public Developer? GetDeveloperById(string id);
     }
 }

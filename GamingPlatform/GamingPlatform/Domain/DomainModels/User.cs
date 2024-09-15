@@ -7,9 +7,10 @@ using IntegratedSystems.Domain.IdentityModels;
 using Microsoft.AspNetCore.Identity;
 namespace IntegratedSystems.Domain.DomainModels
 {
-    
-    public class User : GamingPlatformUser
+    public class User : BaseEntity
     {
+        public virtual GamingPlatformUser GamingPlatformUser { get; set; }
+        public string GamingPlatformUserId { get; set; }
         public ICollection<HighScore>? HighScores { get; set; }
     }
 }

@@ -10,9 +10,8 @@ public interface IUserRepository
     GamingPlatformUser Insert(GamingPlatformUser entity);
     GamingPlatformUser Update(GamingPlatformUser entity);
     GamingPlatformUser Delete(GamingPlatformUser entity);
-    
-    IEnumerable<Developer> GetAllDevelopers();
-    Developer GetDeveloper(string id);
-    IEnumerable<User> GetAllUsers();
-    User GetUser(string id);
+    public Developer? GetDeveloper(string id);
+    public IEnumerable<User> GetUsers();
+    public IEnumerable<Developer> GetDevelopers();
+
 }

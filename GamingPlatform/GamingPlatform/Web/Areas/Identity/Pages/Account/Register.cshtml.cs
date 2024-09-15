@@ -10,6 +10,7 @@ using System.Text;
 using System.Text.Encodings.Web;
 using System.Threading;
 using System.Threading.Tasks;
+using IntegratedSystems.Domain.DomainModels;
 using IntegratedSystems.Domain.IdentityModels;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
@@ -19,6 +20,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.WebUtilities;
 using Microsoft.Extensions.Logging;
+using Service.Interface;
 
 namespace IntegratedSystems.Web.Areas.Identity.Pages.Account
 {
@@ -30,13 +32,19 @@ namespace IntegratedSystems.Web.Areas.Identity.Pages.Account
         private readonly IUserEmailStore<GamingPlatformUser> _emailStore;
         private readonly ILogger<RegisterModel> _logger;
         private readonly IEmailSender _emailSender;
+        private readonly RoleManager<IdentityRole> _roleManager;
+        private readonly IUsersService _usersService;
+
+        public List<string> Roles { get; set; } = new List<string>();
 
         public RegisterModel(
             UserManager<GamingPlatformUser> userManager,
             IUserStore<GamingPlatformUser> userStore,
             SignInManager<GamingPlatformUser> signInManager,
             ILogger<RegisterModel> logger,
-            IEmailSender emailSender)
+            IEmailSender emailSender,
+            RoleManager<IdentityRole> roleManager,
+            IUsersService usersService)
         {
             _userManager = userManager;
             _userStore = userStore;
@@ -44,6 +52,9 @@ namespace IntegratedSystems.Web.Areas.Identity.Pages.Account
             _signInManager = signInManager;
             _logger = logger;
             _emailSender = emailSender;
+            _roleManager = roleManager;
+            _usersService = usersService;
+            Roles = _roleManager.Roles.Select(r => r.Name).ToList();
         }
 
         /// <summary>
@@ -89,6 +100,9 @@ namespace IntegratedSystems.Web.Areas.Identity.Pages.Account
             [Required]
             public string Address { get; set; }
 
+            [Required]
+            public string Role { get; set; }
+
 
             /// <summary>
             ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
@@ -132,6 +146,23 @@ namespace IntegratedSystems.Web.Areas.Identity.Pages.Account
                 user.LastName = Input.LastName;
                 user.Address = Input.Address;
 
+                if (Input.Role == "Developer")
+                {
+                    user.Developer = new Developer
+                    {
+                        Id = Guid.Parse(user.Id)
+                    };
+                    user.DeveloperId = user.Id;
+                }
+                else if (Input.Role == "User")
+                {
+                    user.User = new User
+                    {
+                        Id = Guid.Parse(user.Id)
+                    };
+                    user.UserId = user.Id;
+                }
+
                 var result = await _userManager.CreateAsync(user, Input.Password);
 
                 if (result.Succeeded)
@@ -139,6 +170,15 @@ namespace IntegratedSystems.Web.Areas.Identity.Pages.Account
                     _logger.LogInformation("User created a new account with password.");
 
                     var userId = await _userManager.GetUserIdAsync(user);
+
+                    if (!await _roleManager.RoleExistsAsync(Input.Role))
+                    {
+                        var role = new IdentityRole(Input.Role);
+                        await _roleManager.CreateAsync(role);
+                    }
+
+                    await _userManager.AddToRoleAsync(user, Input.Role);
+
                     var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
                     code = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(code));
                     var callbackUrl = Url.Page(

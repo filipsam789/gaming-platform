@@ -32,6 +32,18 @@ public class UserRepository : IUserRepository
         return entities
             .SingleOrDefault(s => s.Id == id);
     }
+
+    public IEnumerable<Developer> GetDevelopers()
+    {
+        return context.Developers.AsEnumerable();
+    }
+
+    public Developer? GetDeveloper(string id)
+    {
+        return context.Developers
+            .SingleOrDefault(s => s.Id == Guid.Parse(id));
+    }
+
     public GamingPlatformUser Insert(GamingPlatformUser entity)
     {
         if (entity == null)
@@ -64,23 +76,14 @@ public class UserRepository : IUserRepository
         context.SaveChanges();
         return entityEntry.Entity;
     }
-    public IEnumerable<Developer> GetAllDevelopers()
-    {
-        return context.Set<Developer>().AsEnumerable();
-    }
 
-    public Developer GetDeveloper(string id)
+    public IEnumerable<User> GetUsers()
     {
-        return context.Set<Developer>().SingleOrDefault(d => d.Id == id);
-    }
-
-    public IEnumerable<User> GetAllUsers()
-    {
-        return context.Set<User>().AsEnumerable();
+        return context.Users.AsEnumerable();
     }
 
     public User GetUser(string id)
     {
-        return context.Set<User>().SingleOrDefault(u => u.Id == id);
+        return context.Set<User>().SingleOrDefault(u => u.Id.ToString() == id);
     }
 }

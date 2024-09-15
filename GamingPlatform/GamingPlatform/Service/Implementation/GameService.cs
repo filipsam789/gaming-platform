@@ -11,13 +11,14 @@ namespace Service.Implementation
 {
     public class GameService : IGameService
     {
-       
+
         private readonly IUserRepository _userRepository;
         private readonly IRepository<Game> _gameRepository;
         private readonly IRepository<HighScore> _highScoreRepository;
+
         public GameService(IUserRepository userRepository, IRepository<Game> gameRepository, IRepository<HighScore> highScoreRepository)
         {
-            
+
             _userRepository = userRepository;
             _gameRepository = gameRepository;
             _highScoreRepository = highScoreRepository;

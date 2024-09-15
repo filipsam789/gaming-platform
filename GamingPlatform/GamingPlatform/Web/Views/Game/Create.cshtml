@@ -1,8 +1,11 @@
 ﻿@model IntegratedSystems.Domain.DomainModels.Game
+@using IntegratedSystems.Domain.IdentityModels
+@using Microsoft.AspNetCore.Identity
+@inject UserManager<GamingPlatformUser> UserManager
 
 @{
-ViewData["Title"] = "Add Game";
-Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "Add Game";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <h1 class="text-center mb-4" style="color: #13274F;">Add a New Game</h1>
@@ -54,15 +57,10 @@ Layout = "~/Views/Shared/_Layout.cshtml";
                 <input asp-for="ReleaseDate" type="date" class="form-control" />
                 <span asp-validation-for="ReleaseDate" class="text-danger"></span>
             </div>
-
-            <div class="form-group mb-3">
-                <label asp-for="DeveloperId" class="form-label fw-bold" style="color:lightsteelblue;"></label>
-                <select asp-for="DeveloperId" asp-items="ViewBag.DeveloperList" class="form-select">
-                    <option value="">Select Developer</option>
-                </select>
-                <span asp-validation-for="DeveloperId" class="text-danger"></span>
-            </div>
-
+            if (User.IsInRole("Developer"))
+            {
+                <input asp-for="DeveloperId" hidden value="@UserManager.GetUserId(User) " />
+            }
 
             <div class="form-group mb-3">
                 <input type="submit" value="Create" class="btn btn-primary" style="border-color: #BCC6CC; background-color: #A2C2E2; color: white;"/>

@@ -1,4 +1,7 @@
 ﻿@model IntegratedSystems.Domain.DomainModels.Game
+@using IntegratedSystems.Domain.IdentityModels
+@using Microsoft.AspNetCore.Identity
+@inject UserManager<GamingPlatformUser> UserManager
 
 @{
 ViewData["Title"] = "Details";
@@ -76,10 +79,13 @@ Layout = "~/Views/Shared/_Layout.cshtml";
                 <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning" style="border-color: #ffcd39; background-color: #ffcd39; color: white;">Edit Game</a>
                 <a asp-action="Delete" asp-route-id="@Model.Id" class="btn btn-danger" style="border-color: darkred; background-color: darkred; color: white;">Delete Game</a>
             </div>
-            
-            <div class="text-center mt-4">
-                <a asp-action="AddGameHighScore" asp-route-id="@Model.Id" class="btn btn-success" style="border-color: #A2C2E2; background-color: #A2C2E2; color: white;">Add High Score</a>
-            </div>
+
+            @if (User.IsInRole("User"))
+            {
+                <div class="text-center mt-4">
+                    <a asp-action="AddGameHighScore" asp-route-id="@Model.Id" class="btn btn-success" style="border-color: #A2C2E2; background-color: #A2C2E2; color: white;">Add High Score</a>
+                </div>
+            }
 
             <h4 class="mt-4 mb-3">High Scores</h4>
             <table class="table table-bordered">
@@ -110,7 +116,7 @@ Layout = "~/Views/Shared/_Layout.cshtml";
                         @i
                     </td>
                     <td>
-                        @Html.DisplayFor(modelItem => highScore.Score)
+                        @Html.DisplayFor(modelItem => highScore.User.GamingPlatformUser.UserName)
                     </td>
                     <td>
                         @highScore.DateAchieved.ToShortDateString()

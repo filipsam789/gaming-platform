@@ -811,24 +811,32 @@
     ]
   },
   "packageFolders": {
-    "/Users/babyspice110/.nuget/packages/": {}
+    "C:\\Users\\filip\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/babyspice110/Downloads/GamingPlatform/GamingPlatform/Domain/Domain.csproj",
+      "projectUniqueName": "C:\\Users\\filip\\OneDrive\\Documents\\GitHub\\gaming-platform\\GamingPlatform\\GamingPlatform\\Domain\\Domain.csproj",
       "projectName": "Domain",
-      "projectPath": "/Users/babyspice110/Downloads/GamingPlatform/GamingPlatform/Domain/Domain.csproj",
-      "packagesPath": "/Users/babyspice110/.nuget/packages/",
-      "outputPath": "/Users/babyspice110/Downloads/GamingPlatform/GamingPlatform/Domain/obj/",
+      "projectPath": "C:\\Users\\filip\\OneDrive\\Documents\\GitHub\\gaming-platform\\GamingPlatform\\GamingPlatform\\Domain\\Domain.csproj",
+      "packagesPath": "C:\\Users\\filip\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\filip\\OneDrive\\Documents\\GitHub\\gaming-platform\\GamingPlatform\\GamingPlatform\\Domain\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "/Users/babyspice110/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\filip\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -873,7 +881,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.401/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

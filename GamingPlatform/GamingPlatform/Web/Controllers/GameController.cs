@@ -9,20 +9,26 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Repository;
 using Service.Interface;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
+using IntegratedSystems.Domain.IdentityModels;
+using AutoMapper;
 namespace IntegratedSystems.Web.Controllers
 {
+    [Authorize]
     public class GameController : Controller
     {
         private readonly IGameService _gameService;
         private readonly IUsersService _usersService;
         private readonly ApplicationDbContext _context;
+        private readonly UserManager<GamingPlatformUser> _userManager;
 
-
-        public GameController(IGameService gameService, IUsersService usersService, ApplicationDbContext context)
+        public GameController(IGameService gameService, IUsersService usersService, ApplicationDbContext context, UserManager<GamingPlatformUser> userManager)
         {
             _gameService = gameService;
             _context = context;
             _usersService = usersService;
+            _userManager = userManager;
         }
 
         // GET: Games
@@ -49,19 +55,25 @@ namespace IntegratedSystems.Web.Controllers
         }
 
         // GET: Games/Create
+        [Authorize(Roles = "Developer")]
         public IActionResult Create()
         {
-           return View();
+            ViewBag.DeveloperList = _usersService.GetDevelopers();
+            return View();
         }
 
         // POST: Games/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Developer")]
         public IActionResult Create([Bind("Name,Description,Platform,Genre,Version,Price,ReleaseDate,DeveloperId")] Game game)
         {
             if (ModelState.IsValid)
             {
                 game.Id = Guid.NewGuid();
+                var developer = _usersService.GetDeveloperById(game.DeveloperId.ToString());
+
+                game.Developer = developer;
                 _gameService.CreateNewGame(game);
                 return RedirectToAction(nameof(Index));
             }
@@ -70,6 +82,7 @@ namespace IntegratedSystems.Web.Controllers
 
 
         // GET: Games/Edit/5
+        [Authorize(Roles = "Developer")]
         public IActionResult Edit(Guid? id)
         {
             if (id == null)
@@ -88,6 +101,7 @@ namespace IntegratedSystems.Web.Controllers
         // POST: Games/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Developer")]
         public IActionResult Edit(Guid id, [Bind("Name,Description,Platform,Genre,Version,Price,ReleaseDate,DeveloperId,Id")] Game game)
         {
             if (id != game.Id)
@@ -117,6 +131,7 @@ namespace IntegratedSystems.Web.Controllers
             return View(game);
         }
         // GET: Games/Delete/5
+        [Authorize(Roles = "Developer")]
         public IActionResult Delete(Guid? id)
         {
             if (id == null)
@@ -148,6 +163,7 @@ namespace IntegratedSystems.Web.Controllers
         }
 
         // GET: Games/AddGameHighScore
+        [Authorize(Roles = "User")]
         public IActionResult AddGameHighScore(Guid id)
         {
             var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
@@ -165,6 +181,7 @@ namespace IntegratedSystems.Web.Controllers
         // POST: Games/AddGameHighScore
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "User")]
         public IActionResult AddGameHighScore([Bind("GameId,UserId,Score,DateAchieved")] AddGameHighScoreDTO model)
         {
             if (ModelState.IsValid)

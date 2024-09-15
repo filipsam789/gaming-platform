@@ -1,6 +1,7 @@
 ﻿using IntegratedSystems.Domain.DomainModels;
 
 using IntegratedSystems.Domain.DTO;
+using IntegratedSystems.Domain.IdentityModels;
 using Repository.Interface;
 using Service.Interface;
 
@@ -15,33 +16,40 @@ namespace Service.Implementation
             _userRepository = userRepository;
         }
 
-        public User CreateNewUser(User user)
+        public GamingPlatformUser CreateNewUser(GamingPlatformUser user)
         {
             var insertedUser = _userRepository.Insert(user); 
-            return insertedUser as User;
+            return insertedUser;
         }
 
-        public User DeleteUser(User user)
+        public GamingPlatformUser DeleteUser(GamingPlatformUser user)
         {
-            var deletedUser = _userRepository.Delete(user); 
-            return deletedUser as User;
+            return _userRepository.Delete(user); 
         }
 
-        public User GetUserById(Guid? id)
+        public List<Developer> GetDevelopers()
         {
-            var user = _userRepository.Get(id?.ToString());
-            return user as User;
+            return _userRepository.GetDevelopers().ToList();
         }
 
-        public List<User> GetUsers()
+        public GamingPlatformUser GetUserById(Guid? id)
         {
-            return _userRepository.GetAll().OfType<User>().ToList();
+            return _userRepository.Get(id?.ToString());
         }
 
-        public User UpdateUser(User user)
+        public List<GamingPlatformUser> GetUsers()
         {
-            var updatedUser = _userRepository.Update(user);
-            return updatedUser as User;
+            return _userRepository.GetAll().ToList();
+        }
+
+        public Developer? GetDeveloperById(string id)
+        {
+            return _userRepository.GetDeveloper(id);
+        }
+
+        public GamingPlatformUser UpdateUser(GamingPlatformUser user)
+        {
+            return _userRepository.Update(user);
         }
     }
 }

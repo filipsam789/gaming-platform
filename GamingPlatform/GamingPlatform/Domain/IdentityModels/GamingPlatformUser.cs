@@ -13,6 +13,9 @@ namespace IntegratedSystems.Domain.IdentityModels
         public string? FirstName { get; set; }
         public string? LastName { get; set; }
         public string? Address { get; set; }
-        
+        public Developer? Developer { get; set; }
+        public string? DeveloperId { get; set; }
+        public User? User { get; set; }
+        public string? UserId { get; set; }
     }
 }
