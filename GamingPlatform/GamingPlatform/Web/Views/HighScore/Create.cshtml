@@ -1,0 +1,56 @@
+﻿@model IntegratedSystems.Domain.DTO.AddGameHighScoreDTO
+
+@{
+ViewData["Title"] = "Add High Score";
+Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1 class="text-center mb-4" style="color: #13274F;">Add a New High Score</h1>
+
+<hr />
+<div class="row justify-content-center">
+    <div class="col-md-8 col-lg-6">
+        <form asp-action="Create" class="p-4 rounded">
+            <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+            <div class="form-group mb-3">
+                <label asp-for="GameId" class="form-label fw-bold" style="color: lightsteelblue;"></label>
+                <select asp-for="GameId" asp-items="ViewBag.GameList" class="form-select">
+                    <option value="">Select Game</option>
+                </select>
+                <span asp-validation-for="GameId" class="text-danger"></span>
+            </div>
+
+
+            <div class="form-group mb-3">
+                <label asp-for="UserId" class="form-label fw-bold" style="color: lightsteelblue;"></label>
+                <input asp-for="UserId" type="text" class="form-control" value="@ViewBag.UserId" readonly />
+                <span asp-validation-for="UserId" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mb-3">
+                <label asp-for="Score" class="form-label fw-bold" style="color: lightsteelblue;"></label>
+                <input asp-for="Score" type="number" step="1" class="form-control" placeholder="Enter score" />
+                <span asp-validation-for="Score" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mb-3">
+                <label asp-for="DateAchieved" class="form-label fw-bold" style="color: lightsteelblue;"></label>
+                <input asp-for="DateAchieved" type="date" class="form-control" />
+                <span asp-validation-for="DateAchieved" class="text-danger"></span>
+            </div>
+            
+            <div class="form-group mb-3">
+                <input type="submit" value="Add High Score" class="btn btn-primary" style="border-color: #BCC6CC; background-color: #A2C2E2; color: white;" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="text-center mt-3">
+    <a asp-action="Index" class="btn btn-link" style="color: lightsteelblue; margin-left: 10px;">Back to List</a>
+
+</div>
+
+@section Scripts {
+@{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

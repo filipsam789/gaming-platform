@@ -1,0 +1,66 @@
+@model IntegratedSystems.Domain.DomainModels.HighScore
+
+@{
+ViewData["Title"] = "Details";
+Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1 class="text-center mb-4" style="color: #13274F;">High Score Details</h1>
+
+<hr />
+<div class="row justify-content-center">
+    <div class="col-md-8 col-lg-6">
+        <div class="p-4 rounded bg-light">
+            <h4 class="mb-3">High Score Information</h4>
+            <table class="table table-bordered">
+                <tbody>
+                <tr>
+                    <th class="text-nowrap">
+                        Game
+                    </th>
+                    <td>
+                        @Model.Game.Name
+                    </td>
+                </tr>
+                <tr>
+                    <th class="text-nowrap">
+                        Player
+                    </th>
+                    <td>
+                        @Model.UserId
+                    </td>
+                </tr>
+                <tr>
+                    <th class="text-nowrap">
+                        Score
+                    </th>
+                    <td>
+                        @Model.Score
+                    </td>
+                </tr>
+                <tr>
+                    <th class="text-nowrap">
+                        Date Achieved
+                    </th>
+                    <td>
+                        @Model.DateAchieved.ToShortDateString()
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <div class="text-center mt-4">
+                <a asp-action="Delete" asp-route-id="@Model.Id" class="btn btn-danger" style="border-color: darkred; background-color: darkred; color: white;">Delete High Score</a>
+            </div>
+
+            <div class="text-center mt-4">
+                <a asp-action="Index" class="btn btn-link" style="color: lightsteelblue; margin-left: 10px;">Back to List</a>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+@{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

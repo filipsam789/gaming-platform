@@ -1,0 +1,38 @@
+﻿@model IntegratedSystems.Domain.DTO.AddGameHighScoreDTO
+
+@{
+Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-6">
+            <h1 class="text-center mb-4" style="color: #13274F;">High Score for </h1>
+            <hr />
+            <form asp-action="AddGameHighScore">
+                <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
+
+                <input type="hidden" asp-for="GameId"/>
+                <input type="hidden" asp-for="UserId"/>
+
+                <div class="form-group">
+                    <label asp-for="DateAchieved" class="form-label" style="color: lightsteelblue;">Date Achieved</label>
+                    <input type="date" asp-for="DateAchieved" class="form-control"/>
+                    <span asp-validation-for="DateAchieved" class="text-danger"></span>
+                </div>
+
+
+                <div class="form-group mb-3">
+                    <label asp-for="Score" class="form-label" style="color: lightsteelblue;">Score</label>
+                    <input type="number" asp-for="Score" class="form-control" min="0"/>
+                    <span asp-validation-for="Score" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-3 text-center ">
+                    <input type="submit" value="Add High Score" class="btn btn-success" style="border-color: #BCC6CC; background-color: #A2C2E2; color: white;"/>
+                </div>
+                
+            </form>
+        </div>
+    </div>
+</div>
