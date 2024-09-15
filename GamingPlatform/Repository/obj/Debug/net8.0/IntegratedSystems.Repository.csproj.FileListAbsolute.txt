@@ -1,0 +1,17 @@
+/Users/babyspice110/Downloads/IntegratedSystemsExam/IntegratedSystemsExam/IntegratedSystems.Repository/bin/Debug/net8.0/IntegratedSystems.Repository.deps.json
+/Users/babyspice110/Downloads/IntegratedSystemsExam/IntegratedSystemsExam/IntegratedSystems.Repository/bin/Debug/net8.0/IntegratedSystems.Repository.runtimeconfig.json
+/Users/babyspice110/Downloads/IntegratedSystemsExam/IntegratedSystemsExam/IntegratedSystems.Repository/bin/Debug/net8.0/IntegratedSystems.Repository.dll
+/Users/babyspice110/Downloads/IntegratedSystemsExam/IntegratedSystemsExam/IntegratedSystems.Repository/bin/Debug/net8.0/IntegratedSystems.Repository.pdb
+/Users/babyspice110/Downloads/IntegratedSystemsExam/IntegratedSystemsExam/IntegratedSystems.Repository/bin/Debug/net8.0/IntegratedSystems.Domain.dll
+/Users/babyspice110/Downloads/IntegratedSystemsExam/IntegratedSystemsExam/IntegratedSystems.Repository/bin/Debug/net8.0/IntegratedSystems.Domain.pdb
+/Users/babyspice110/Downloads/IntegratedSystemsExam/IntegratedSystemsExam/IntegratedSystems.Repository/obj/Debug/net8.0/IntegratedSystems.Repository.csproj.AssemblyReference.cache
+/Users/babyspice110/Downloads/IntegratedSystemsExam/IntegratedSystemsExam/IntegratedSystems.Repository/obj/Debug/net8.0/IntegratedSystems.Repository.GeneratedMSBuildEditorConfig.editorconfig
+/Users/babyspice110/Downloads/IntegratedSystemsExam/IntegratedSystemsExam/IntegratedSystems.Repository/obj/Debug/net8.0/IntegratedSystems.Repository.AssemblyInfoInputs.cache
+/Users/babyspice110/Downloads/IntegratedSystemsExam/IntegratedSystemsExam/IntegratedSystems.Repository/obj/Debug/net8.0/IntegratedSystems.Repository.AssemblyInfo.cs
+/Users/babyspice110/Downloads/IntegratedSystemsExam/IntegratedSystemsExam/IntegratedSystems.Repository/obj/Debug/net8.0/IntegratedSystems.Repository.csproj.CoreCompileInputs.cache
+/Users/babyspice110/Downloads/IntegratedSystemsExam/IntegratedSystemsExam/IntegratedSystems.Repository/obj/Debug/net8.0/Integrat.918B76B7.Up2Date
+/Users/babyspice110/Downloads/IntegratedSystemsExam/IntegratedSystemsExam/IntegratedSystems.Repository/obj/Debug/net8.0/IntegratedSystems.Repository.dll
+/Users/babyspice110/Downloads/IntegratedSystemsExam/IntegratedSystemsExam/IntegratedSystems.Repository/obj/Debug/net8.0/refint/IntegratedSystems.Repository.dll
+/Users/babyspice110/Downloads/IntegratedSystemsExam/IntegratedSystemsExam/IntegratedSystems.Repository/obj/Debug/net8.0/IntegratedSystems.Repository.pdb
+/Users/babyspice110/Downloads/IntegratedSystemsExam/IntegratedSystemsExam/IntegratedSystems.Repository/obj/Debug/net8.0/IntegratedSystems.Repository.genruntimeconfig.cache
+/Users/babyspice110/Downloads/IntegratedSystemsExam/IntegratedSystemsExam/IntegratedSystems.Repository/obj/Debug/net8.0/ref/IntegratedSystems.Repository.dll

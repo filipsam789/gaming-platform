@@ -1,0 +1,12 @@
+/Users/babyspice110/Downloads/IntegratedSystemsExam/IntegratedSystemsExam/IntegratedSystems.Domain/bin/Debug/net8.0/IntegratedSystems.Domain.deps.json
+/Users/babyspice110/Downloads/IntegratedSystemsExam/IntegratedSystemsExam/IntegratedSystems.Domain/bin/Debug/net8.0/IntegratedSystems.Domain.dll
+/Users/babyspice110/Downloads/IntegratedSystemsExam/IntegratedSystemsExam/IntegratedSystems.Domain/bin/Debug/net8.0/IntegratedSystems.Domain.pdb
+/Users/babyspice110/Downloads/IntegratedSystemsExam/IntegratedSystemsExam/IntegratedSystems.Domain/obj/Debug/net8.0/IntegratedSystems.Domain.csproj.AssemblyReference.cache
+/Users/babyspice110/Downloads/IntegratedSystemsExam/IntegratedSystemsExam/IntegratedSystems.Domain/obj/Debug/net8.0/IntegratedSystems.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/babyspice110/Downloads/IntegratedSystemsExam/IntegratedSystemsExam/IntegratedSystems.Domain/obj/Debug/net8.0/IntegratedSystems.Domain.AssemblyInfoInputs.cache
+/Users/babyspice110/Downloads/IntegratedSystemsExam/IntegratedSystemsExam/IntegratedSystems.Domain/obj/Debug/net8.0/IntegratedSystems.Domain.AssemblyInfo.cs
+/Users/babyspice110/Downloads/IntegratedSystemsExam/IntegratedSystemsExam/IntegratedSystems.Domain/obj/Debug/net8.0/IntegratedSystems.Domain.csproj.CoreCompileInputs.cache
+/Users/babyspice110/Downloads/IntegratedSystemsExam/IntegratedSystemsExam/IntegratedSystems.Domain/obj/Debug/net8.0/IntegratedSystems.Domain.dll
+/Users/babyspice110/Downloads/IntegratedSystemsExam/IntegratedSystemsExam/IntegratedSystems.Domain/obj/Debug/net8.0/refint/IntegratedSystems.Domain.dll
+/Users/babyspice110/Downloads/IntegratedSystemsExam/IntegratedSystemsExam/IntegratedSystems.Domain/obj/Debug/net8.0/IntegratedSystems.Domain.pdb
+/Users/babyspice110/Downloads/IntegratedSystemsExam/IntegratedSystemsExam/IntegratedSystems.Domain/obj/Debug/net8.0/ref/IntegratedSystems.Domain.dll

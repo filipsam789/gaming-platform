@@ -1,0 +1,80 @@
+﻿@model IntegratedSystems.Domain.DomainModels.Game
+
+@{
+ViewData["Title"] = "Edit";
+Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1 class="text-center mb-4"style="color: #13274F;">Edit Game</h1>
+
+<hr />
+<div class="row justify-content-center">
+    <div class="col-md-8 col-lg-6">
+        <form asp-action="Edit" class="p-4 rounded">
+            <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+            <div class="form-group mb-3">
+                <label asp-for="Name" class="form-label fw-bold" style="color: lightsteelblue;"></label>
+                <input asp-for="Name" class="form-control" placeholder="Enter game name" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mb-3">
+                <label asp-for="Description" class="form-label fw-bold" style="color: lightsteelblue;"></label>
+                <textarea asp-for="Description" class="form-control" placeholder="Enter game description"></textarea>
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mb-3">
+                <label asp-for="Platform" class="form-label fw-bold" style="color: lightsteelblue;"></label>
+                <input asp-for="Platform" class="form-control" placeholder="Enter platform" />
+                <span asp-validation-for="Platform" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mb-3">
+                <label asp-for="Genre" class="form-label fw-bold" style="color: lightsteelblue;"></label>
+                <input asp-for="Genre" class="form-control" placeholder="Enter genre" />
+                <span asp-validation-for="Genre" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mb-3">
+                <label asp-for="Version" class="form-label fw-bold" style="color: lightsteelblue;"></label>
+                <input asp-for="Version" type="number" step="0.01" class="form-control" placeholder="Enter version" />
+                <span asp-validation-for="Version" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mb-3">
+                <label asp-for="Price" class="form-label fw-bold" style="color: lightsteelblue;"></label>
+                <input asp-for="Price" type="number" step="0.01" class="form-control" placeholder="Enter price" />
+                <span asp-validation-for="Price" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mb-3">
+                <label asp-for="ReleaseDate" class="form-label fw-bold" style="color: lightsteelblue;"></label>
+                <input asp-for="ReleaseDate" type="date" class="form-control" />
+                <span asp-validation-for="ReleaseDate" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mb-3">
+                <label asp-for="DeveloperId" class="form-label fw-bold" style="color: lightsteelblue;"></label>
+                <select asp-for="DeveloperId" asp-items="ViewBag.DeveloperList" class="form-select">
+                    <option value="">Select Developer</option>
+                </select>
+                <span asp-validation-for="DeveloperId" class="text-danger"></span>
+            </div>
+
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group mb-3">
+                <input type="submit" value="Save" class="btn btn-primary" style="border-color: #BCC6CC; background-color: #A2C2E2; color: white;" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="text-center mt-3">
+    <a asp-action="Index" class="btn btn-link" style="color: lightsteelblue;">Back to List</a>
+</div>
+
+@section Scripts {
+@{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
