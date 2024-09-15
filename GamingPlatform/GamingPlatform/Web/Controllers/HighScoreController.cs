@@ -4,6 +4,7 @@ using System.Security.Claims;
 using Microsoft.AspNetCore.Mvc;
 using IntegratedSystems.Domain.DomainModels;
 using IntegratedSystems.Domain.DTO;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Repository;
@@ -11,6 +12,7 @@ using Service.Interface;
 
 namespace IntegratedSystems.Web.Controllers
 {
+    [Authorize]
     public class HighScoreController : Controller
     {
         private readonly IHighScoreService _highScoreService;
@@ -51,6 +53,7 @@ namespace IntegratedSystems.Web.Controllers
         }
 
         // GET: HighScores/Create
+        [Authorize(Roles = "User")]
         public IActionResult Create()
         {
             var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
@@ -62,6 +65,7 @@ namespace IntegratedSystems.Web.Controllers
         // POST: HighScores/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "User")]
         public IActionResult Create([Bind("Score,DateAchieved,GameId")] AddGameHighScoreDTO highScoreDto)
         {
             var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
@@ -86,6 +90,7 @@ namespace IntegratedSystems.Web.Controllers
         }
         
         // GET: HighScores/Delete/5
+        [Authorize(Roles = "User")]
         public IActionResult Delete(Guid? id)
         {
             if (id == null)
@@ -105,6 +110,7 @@ namespace IntegratedSystems.Web.Controllers
         // POST: HighScores/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "User")]
         public IActionResult DeleteConfirmed(Guid id)
         {
             var highScore = _highScoreService.GetHighScoreById(id);

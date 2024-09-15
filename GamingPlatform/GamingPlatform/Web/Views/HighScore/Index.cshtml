@@ -1,8 +1,11 @@
 ﻿@model IEnumerable<IntegratedSystems.Domain.DomainModels.HighScore>
-
+@using IntegratedSystems.Domain.IdentityModels
+@using Microsoft.AspNetCore.Identity
+@inject UserManager<GamingPlatformUser> UserManager
 @{
     ViewData["Title"] = "High Scores";
     Layout = "~/Views/Shared/_Layout.cshtml";
+    var user = UserManager.GetUserAsync(User).Result;
 }
 
 <h1 class="text-center mb-4" style="color: #13274F;">Leaderboard</h1>
@@ -39,7 +42,10 @@
                     <td>@highScore.UserId</td>
                     <td>
                         <a asp-action="Details" asp-route-id="@highScore.Id" class="btn btn-info btn-sm" style="border-color: #ffcd39; background-color: #ffcd39; color: white;">Details</a>
-                        <a asp-action="Delete" asp-route-id="@highScore.Id" class="btn btn-danger btn-sm" style="border-color: darkred; background-color: darkred; color: white;">Delete</a>
+                        @if (User.IsInRole("User") && highScore.UserId==Guid.Parse(user.Id))
+                        {
+                            <a asp-action="Delete" asp-route-id="@highScore.Id" class="btn btn-danger btn-sm" style="border-color: darkred; background-color: darkred; color: white;">Delete</a>
+                        }
                     </td>
                 </tr>
                 i++;
