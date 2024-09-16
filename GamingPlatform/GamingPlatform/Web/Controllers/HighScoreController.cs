@@ -9,6 +9,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Repository;
 using Service.Interface;
+using IntegratedSystems.Domain;
 
 namespace IntegratedSystems.Web.Controllers
 {
@@ -19,13 +20,15 @@ namespace IntegratedSystems.Web.Controllers
         private readonly IGameService _gameService;
         private readonly IUsersService _usersService;
         private readonly ApplicationDbContext _context;
+        private readonly IEmailService _mailService;
 
-        public HighScoreController(IHighScoreService highScoreService, IGameService gameService, IUsersService usersService, ApplicationDbContext context)
+        public HighScoreController(IHighScoreService highScoreService, IGameService gameService, IUsersService usersService, ApplicationDbContext context, IEmailService mailService)
         {
             _highScoreService = highScoreService;
             _gameService = gameService;
             _context = context;
             _usersService = usersService;
+            _mailService = mailService;
         }
 
         // GET: HighScores
@@ -51,8 +54,6 @@ namespace IntegratedSystems.Web.Controllers
                 return NotFound();
             }
             
-            
-
             return View(highScore);
         }
 
@@ -74,12 +75,20 @@ namespace IntegratedSystems.Web.Controllers
         {
             var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
             highScoreDto.UserId = Guid.Parse(userId);
+            var game = _gameService.GetGameById(highScoreDto.GameId);
             if (ModelState.IsValid)
             {
                 var result = _gameService.AddGameHighScore(highScoreDto);
                 if (result)
                 {
-                    _gameService.AddGameHighScore(highScoreDto);
+                    var emailMessage = new EmailMessage
+                    {
+                        Id = Guid.NewGuid(),
+                        Content = $"Congratulations on having a new high score of  {highScoreDto.Score} in the game {game.Name}!",
+                        Subject = $"New high score in {game.Name}!",
+                        MailTo = "berna.hodzhin@students.finki.ukim.mk"
+                    };
+                    _mailService.SendEmailAsync(emailMessage);
                     return RedirectToAction(nameof(Index));
                 }
                 else

@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = IntegratedSystems.Domain
-build_property.ProjectDir = /Users/babyspice110/Documents/GitHub/gaming-platform/GamingPlatform/GamingPlatform/Domain/
+build_property.ProjectDir = C:\Users\filip\OneDrive\Documents\GitHub\gaming-platform\GamingPlatform\GamingPlatform\Domain\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

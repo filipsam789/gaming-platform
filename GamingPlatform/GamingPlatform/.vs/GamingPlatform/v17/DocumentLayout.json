@@ -3,8 +3,56 @@
   "WorkspaceRootPath": "C:\\Users\\filip\\OneDrive\\Documents\\GitHub\\gaming-platform\\GamingPlatform\\GamingPlatform\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{5D2A778A-9191-47AB-9C68-BC15327486E2}|Web\\Web.csproj|c:\\users\\filip\\onedrive\\documents\\github\\gaming-platform\\gamingplatform\\gamingplatform\\web\\controllers\\highscorecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D2A778A-9191-47AB-9C68-BC15327486E2}|Web\\Web.csproj|solutionrelative:web\\controllers\\highscorecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4A68030-021C-4648-B06F-5DCB2935C75C}|Service\\Service.csproj|c:\\users\\filip\\onedrive\\documents\\github\\gaming-platform\\gamingplatform\\gamingplatform\\service\\implementation\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4A68030-021C-4648-B06F-5DCB2935C75C}|Service\\Service.csproj|solutionrelative:service\\implementation\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D2A778A-9191-47AB-9C68-BC15327486E2}|Web\\Web.csproj|c:\\users\\filip\\onedrive\\documents\\github\\gaming-platform\\gamingplatform\\gamingplatform\\web\\controllers\\gamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D2A778A-9191-47AB-9C68-BC15327486E2}|Web\\Web.csproj|solutionrelative:web\\controllers\\gamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D0073BE5-0BAF-4052-B937-11E30B47FDDE}|Domain\\Domain.csproj|c:\\users\\filip\\onedrive\\documents\\github\\gaming-platform\\gamingplatform\\gamingplatform\\domain\\dto\\addgamehighscoredto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D0073BE5-0BAF-4052-B937-11E30B47FDDE}|Domain\\Domain.csproj|solutionrelative:domain\\dto\\addgamehighscoredto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D2A778A-9191-47AB-9C68-BC15327486E2}|Web\\Web.csproj|c:\\users\\filip\\onedrive\\documents\\github\\gaming-platform\\gamingplatform\\gamingplatform\\web\\views\\game\\addgamehighscore.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5D2A778A-9191-47AB-9C68-BC15327486E2}|Web\\Web.csproj|solutionrelative:web\\views\\game\\addgamehighscore.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D2A778A-9191-47AB-9C68-BC15327486E2}|Web\\Web.csproj|c:\\users\\filip\\onedrive\\documents\\github\\gaming-platform\\gamingplatform\\gamingplatform\\web\\views\\highscore\\addgamehighscore.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5D2A778A-9191-47AB-9C68-BC15327486E2}|Web\\Web.csproj|solutionrelative:web\\views\\highscore\\addgamehighscore.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D2A778A-9191-47AB-9C68-BC15327486E2}|Web\\Web.csproj|c:\\users\\filip\\onedrive\\documents\\github\\gaming-platform\\gamingplatform\\gamingplatform\\web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{5D2A778A-9191-47AB-9C68-BC15327486E2}|Web\\Web.csproj|solutionrelative:web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D2A778A-9191-47AB-9C68-BC15327486E2}|Web\\Web.csproj|c:\\users\\filip\\onedrive\\documents\\github\\gaming-platform\\gamingplatform\\gamingplatform\\web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D2A778A-9191-47AB-9C68-BC15327486E2}|Web\\Web.csproj|solutionrelative:web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4A68030-021C-4648-B06F-5DCB2935C75C}|Service\\Service.csproj|c:\\users\\filip\\onedrive\\documents\\github\\gaming-platform\\gamingplatform\\gamingplatform\\service\\interface\\iemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4A68030-021C-4648-B06F-5DCB2935C75C}|Service\\Service.csproj|solutionrelative:service\\interface\\iemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0073BE5-0BAF-4052-B937-11E30B47FDDE}|Domain\\Domain.csproj|c:\\users\\filip\\onedrive\\documents\\github\\gaming-platform\\gamingplatform\\gamingplatform\\domain\\emailmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0073BE5-0BAF-4052-B937-11E30B47FDDE}|Domain\\Domain.csproj|solutionrelative:domain\\emailmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4A68030-021C-4648-B06F-5DCB2935C75C}|Service\\Service.csproj|c:\\users\\filip\\onedrive\\documents\\github\\gaming-platform\\gamingplatform\\gamingplatform\\service\\implementation\\gameservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4A68030-021C-4648-B06F-5DCB2935C75C}|Service\\Service.csproj|solutionrelative:service\\implementation\\gameservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0073BE5-0BAF-4052-B937-11E30B47FDDE}|Domain\\Domain.csproj|c:\\users\\filip\\onedrive\\documents\\github\\gaming-platform\\gamingplatform\\gamingplatform\\domain\\mailsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0073BE5-0BAF-4052-B937-11E30B47FDDE}|Domain\\Domain.csproj|solutionrelative:domain\\mailsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D7C870D-36DE-42BE-B840-52E8C16CF645}|Repository\\Repository.csproj|c:\\users\\filip\\onedrive\\documents\\github\\gaming-platform\\gamingplatform\\gamingplatform\\repository\\repository.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{4D7C870D-36DE-42BE-B840-52E8C16CF645}|Repository\\Repository.csproj|solutionrelative:repository\\repository.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5D2A778A-9191-47AB-9C68-BC15327486E2}|Web\\Web.csproj|c:\\users\\filip\\onedrive\\documents\\github\\gaming-platform\\gamingplatform\\gamingplatform\\web\\views\\game\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -13,10 +61,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{4D7C870D-36DE-42BE-B840-52E8C16CF645}|Repository\\Repository.csproj|c:\\users\\filip\\onedrive\\documents\\github\\gaming-platform\\gamingplatform\\gamingplatform\\repository\\implementation\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4D7C870D-36DE-42BE-B840-52E8C16CF645}|Repository\\Repository.csproj|solutionrelative:repository\\implementation\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D2A778A-9191-47AB-9C68-BC15327486E2}|Web\\Web.csproj|c:\\users\\filip\\onedrive\\documents\\github\\gaming-platform\\gamingplatform\\gamingplatform\\web\\controllers\\gamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D2A778A-9191-47AB-9C68-BC15327486E2}|Web\\Web.csproj|solutionrelative:web\\controllers\\gamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C4A68030-021C-4648-B06F-5DCB2935C75C}|Service\\Service.csproj|c:\\users\\filip\\onedrive\\documents\\github\\gaming-platform\\gamingplatform\\gamingplatform\\service\\interface\\iusersservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -63,10 +107,6 @@
       "RelativeMoniker": "D:0:0:{D0073BE5-0BAF-4052-B937-11E30B47FDDE}|Domain\\Domain.csproj|solutionrelative:domain\\domainmodels\\developer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C4A68030-021C-4648-B06F-5DCB2935C75C}|Service\\Service.csproj|c:\\users\\filip\\onedrive\\documents\\github\\gaming-platform\\gamingplatform\\gamingplatform\\service\\implementation\\gameservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C4A68030-021C-4648-B06F-5DCB2935C75C}|Service\\Service.csproj|solutionrelative:service\\implementation\\gameservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D0073BE5-0BAF-4052-B937-11E30B47FDDE}|Domain\\Domain.csproj|c:\\users\\filip\\onedrive\\documents\\github\\gaming-platform\\gamingplatform\\gamingplatform\\domain\\domainmodels\\highscore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D0073BE5-0BAF-4052-B937-11E30B47FDDE}|Domain\\Domain.csproj|solutionrelative:domain\\domainmodels\\highscore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -91,19 +131,71 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AddGameHighScoreDTO.cs",
-              "DocumentMoniker": "C:\\Users\\filip\\OneDrive\\Documents\\GitHub\\gaming-platform\\GamingPlatform\\GamingPlatform\\Domain\\DTO\\AddGameHighScoreDTO.cs",
-              "RelativeDocumentMoniker": "Domain\\DTO\\AddGameHighScoreDTO.cs",
-              "ToolTip": "C:\\Users\\filip\\OneDrive\\Documents\\GitHub\\gaming-platform\\GamingPlatform\\GamingPlatform\\Domain\\DTO\\AddGameHighScoreDTO.cs*",
-              "RelativeToolTip": "Domain\\DTO\\AddGameHighScoreDTO.cs*",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAApAAAA",
+              "Title": "HighScoreController.cs",
+              "DocumentMoniker": "C:\\Users\\filip\\OneDrive\\Documents\\GitHub\\gaming-platform\\GamingPlatform\\GamingPlatform\\Web\\Controllers\\HighScoreController.cs",
+              "RelativeDocumentMoniker": "Web\\Controllers\\HighScoreController.cs",
+              "ToolTip": "C:\\Users\\filip\\OneDrive\\Documents\\GitHub\\gaming-platform\\GamingPlatform\\GamingPlatform\\Web\\Controllers\\HighScoreController.cs*",
+              "RelativeToolTip": "Web\\Controllers\\HighScoreController.cs*",
+              "ViewState": "AQIAAEEAAAAAAAAAAAAnwFkAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-15T19:28:06.664Z",
+              "WhenOpened": "2024-09-15T23:19:30.16Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
+              "Title": "EmailService.cs",
+              "DocumentMoniker": "C:\\Users\\filip\\OneDrive\\Documents\\GitHub\\gaming-platform\\GamingPlatform\\GamingPlatform\\Service\\Implementation\\EmailService.cs",
+              "RelativeDocumentMoniker": "Service\\Implementation\\EmailService.cs",
+              "ToolTip": "C:\\Users\\filip\\OneDrive\\Documents\\GitHub\\gaming-platform\\GamingPlatform\\GamingPlatform\\Service\\Implementation\\EmailService.cs",
+              "RelativeToolTip": "Service\\Implementation\\EmailService.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAEwCwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T23:24:19.281Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\filip\\OneDrive\\Documents\\GitHub\\gaming-platform\\GamingPlatform\\GamingPlatform\\Web\\Program.cs",
+              "RelativeDocumentMoniker": "Web\\Program.cs",
+              "ToolTip": "C:\\Users\\filip\\OneDrive\\Documents\\GitHub\\gaming-platform\\GamingPlatform\\GamingPlatform\\Web\\Program.cs",
+              "RelativeToolTip": "Web\\Program.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAIAwwBgAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T23:19:20.258Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\filip\\OneDrive\\Documents\\GitHub\\gaming-platform\\GamingPlatform\\GamingPlatform\\Web\\appsettings.json",
+              "RelativeDocumentMoniker": "Web\\appsettings.json",
+              "ToolTip": "C:\\Users\\filip\\OneDrive\\Documents\\GitHub\\gaming-platform\\GamingPlatform\\GamingPlatform\\Web\\appsettings.json",
+              "RelativeToolTip": "Web\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-09-15T23:28:48.264Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IEmailService.cs",
+              "DocumentMoniker": "C:\\Users\\filip\\OneDrive\\Documents\\GitHub\\gaming-platform\\GamingPlatform\\GamingPlatform\\Service\\Interface\\IEmailService.cs",
+              "RelativeDocumentMoniker": "Service\\Interface\\IEmailService.cs",
+              "ToolTip": "C:\\Users\\filip\\OneDrive\\Documents\\GitHub\\gaming-platform\\GamingPlatform\\GamingPlatform\\Service\\Interface\\IEmailService.cs",
+              "RelativeToolTip": "Service\\Interface\\IEmailService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T23:22:02.906Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "Repository.cs",
               "DocumentMoniker": "C:\\Users\\filip\\OneDrive\\Documents\\GitHub\\gaming-platform\\GamingPlatform\\GamingPlatform\\Repository\\Implementation\\Repository.cs",
               "RelativeDocumentMoniker": "Repository\\Implementation\\Repository.cs",
@@ -111,12 +203,114 @@
               "RelativeToolTip": "Repository\\Implementation\\Repository.cs",
               "ViewState": "AQIAADsAAAAAAAAAAAAwwEgAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-15T19:21:33.295Z",
+              "WhenOpened": "2024-09-15T19:21:33.295Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AddGameHighScoreDTO.cs",
+              "DocumentMoniker": "C:\\Users\\filip\\OneDrive\\Documents\\GitHub\\gaming-platform\\GamingPlatform\\GamingPlatform\\Domain\\DTO\\AddGameHighScoreDTO.cs",
+              "RelativeDocumentMoniker": "Domain\\DTO\\AddGameHighScoreDTO.cs",
+              "ToolTip": "C:\\Users\\filip\\OneDrive\\Documents\\GitHub\\gaming-platform\\GamingPlatform\\GamingPlatform\\Domain\\DTO\\AddGameHighScoreDTO.cs",
+              "RelativeToolTip": "Domain\\DTO\\AddGameHighScoreDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAkAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T19:28:06.664Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
+              "Title": "GameController.cs",
+              "DocumentMoniker": "C:\\Users\\filip\\OneDrive\\Documents\\GitHub\\gaming-platform\\GamingPlatform\\GamingPlatform\\Web\\Controllers\\GameController.cs",
+              "RelativeDocumentMoniker": "Web\\Controllers\\GameController.cs",
+              "ToolTip": "C:\\Users\\filip\\OneDrive\\Documents\\GitHub\\gaming-platform\\GamingPlatform\\GamingPlatform\\Web\\Controllers\\GameController.cs",
+              "RelativeToolTip": "Web\\Controllers\\GameController.cs",
+              "ViewState": "AQIAAJgAAAAAAAAAAAAIwKoAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T19:01:55.886Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AddGameHighScore.cshtml",
+              "DocumentMoniker": "C:\\Users\\filip\\OneDrive\\Documents\\GitHub\\gaming-platform\\GamingPlatform\\GamingPlatform\\Web\\Views\\HighScore\\AddGameHighScore.cshtml",
+              "RelativeDocumentMoniker": "Web\\Views\\HighScore\\AddGameHighScore.cshtml",
+              "ToolTip": "C:\\Users\\filip\\OneDrive\\Documents\\GitHub\\gaming-platform\\GamingPlatform\\GamingPlatform\\Web\\Views\\HighScore\\AddGameHighScore.cshtml",
+              "RelativeToolTip": "Web\\Views\\HighScore\\AddGameHighScore.cshtml",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAB8AAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-16T00:05:46.859Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AddGameHighScore.cshtml",
+              "DocumentMoniker": "C:\\Users\\filip\\OneDrive\\Documents\\GitHub\\gaming-platform\\GamingPlatform\\GamingPlatform\\Web\\Views\\Game\\AddGameHighScore.cshtml",
+              "RelativeDocumentMoniker": "Web\\Views\\Game\\AddGameHighScore.cshtml",
+              "ToolTip": "C:\\Users\\filip\\OneDrive\\Documents\\GitHub\\gaming-platform\\GamingPlatform\\GamingPlatform\\Web\\Views\\Game\\AddGameHighScore.cshtml",
+              "RelativeToolTip": "Web\\Views\\Game\\AddGameHighScore.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-16T00:07:00.618Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "EmailMessage.cs",
+              "DocumentMoniker": "C:\\Users\\filip\\OneDrive\\Documents\\GitHub\\gaming-platform\\GamingPlatform\\GamingPlatform\\Domain\\EmailMessage.cs",
+              "RelativeDocumentMoniker": "Domain\\EmailMessage.cs",
+              "ToolTip": "C:\\Users\\filip\\OneDrive\\Documents\\GitHub\\gaming-platform\\GamingPlatform\\GamingPlatform\\Domain\\EmailMessage.cs",
+              "RelativeToolTip": "Domain\\EmailMessage.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAkAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T23:23:14.151Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "MailSettings.cs",
+              "DocumentMoniker": "C:\\Users\\filip\\OneDrive\\Documents\\GitHub\\gaming-platform\\GamingPlatform\\GamingPlatform\\Domain\\MailSettings.cs",
+              "RelativeDocumentMoniker": "Domain\\MailSettings.cs",
+              "ToolTip": "C:\\Users\\filip\\OneDrive\\Documents\\GitHub\\gaming-platform\\GamingPlatform\\GamingPlatform\\Domain\\MailSettings.cs",
+              "RelativeToolTip": "Domain\\MailSettings.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T23:23:46.91Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "GameService.cs",
+              "DocumentMoniker": "C:\\Users\\filip\\OneDrive\\Documents\\GitHub\\gaming-platform\\GamingPlatform\\GamingPlatform\\Service\\Implementation\\GameService.cs",
+              "RelativeDocumentMoniker": "Service\\Implementation\\GameService.cs",
+              "ToolTip": "C:\\Users\\filip\\OneDrive\\Documents\\GitHub\\gaming-platform\\GamingPlatform\\GamingPlatform\\Service\\Implementation\\GameService.cs",
+              "RelativeToolTip": "Service\\Implementation\\GameService.cs",
+              "ViewState": "AQIAADQAAAAAAAAAAAAYwDgAAABKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T19:01:35.447Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Repository.csproj",
+              "DocumentMoniker": "C:\\Users\\filip\\OneDrive\\Documents\\GitHub\\gaming-platform\\GamingPlatform\\GamingPlatform\\Repository\\Repository.csproj",
+              "RelativeDocumentMoniker": "Repository\\Repository.csproj",
+              "ToolTip": "C:\\Users\\filip\\OneDrive\\Documents\\GitHub\\gaming-platform\\GamingPlatform\\GamingPlatform\\Repository\\Repository.csproj",
+              "RelativeToolTip": "Repository\\Repository.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-09-15T22:12:10.712Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\Users\\filip\\OneDrive\\Documents\\GitHub\\gaming-platform\\GamingPlatform\\GamingPlatform\\Web\\Views\\Game\\Details.cshtml",
               "RelativeDocumentMoniker": "Web\\Views\\Game\\Details.cshtml",
@@ -124,12 +318,11 @@
               "RelativeToolTip": "Web\\Views\\Game\\Details.cshtml",
               "ViewState": "AQIAAG8AAAAAAAAAAAAAAIIAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-15T19:17:09.342Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-15T19:17:09.342Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 22,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\filip\\OneDrive\\Documents\\GitHub\\gaming-platform\\GamingPlatform\\GamingPlatform\\Web\\Views\\Game\\Create.cshtml",
               "RelativeDocumentMoniker": "Web\\Views\\Game\\Create.cshtml",
@@ -137,25 +330,11 @@
               "RelativeToolTip": "Web\\Views\\Game\\Create.cshtml",
               "ViewState": "AQIAADYAAAAAAAAAAAAAAD4AAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-15T19:10:22.045Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-15T19:10:22.045Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "GameController.cs",
-              "DocumentMoniker": "C:\\Users\\filip\\OneDrive\\Documents\\GitHub\\gaming-platform\\GamingPlatform\\GamingPlatform\\Web\\Controllers\\GameController.cs",
-              "RelativeDocumentMoniker": "Web\\Controllers\\GameController.cs",
-              "ToolTip": "C:\\Users\\filip\\OneDrive\\Documents\\GitHub\\gaming-platform\\GamingPlatform\\GamingPlatform\\Web\\Controllers\\GameController.cs",
-              "RelativeToolTip": "Web\\Controllers\\GameController.cs",
-              "ViewState": "AQIAAJkAAAAAAAAAAAAQwKsAAAAfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-15T19:01:55.886Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 15,
               "Title": "IUsersService.cs",
               "DocumentMoniker": "C:\\Users\\filip\\OneDrive\\Documents\\GitHub\\gaming-platform\\GamingPlatform\\GamingPlatform\\Service\\Interface\\IUsersService.cs",
               "RelativeDocumentMoniker": "Service\\Interface\\IUsersService.cs",
@@ -163,12 +342,11 @@
               "RelativeToolTip": "Service\\Interface\\IUsersService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAqwBAAAAA1AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-15T19:06:14.774Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-15T19:06:14.774Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 16,
               "Title": "UserService.cs",
               "DocumentMoniker": "C:\\Users\\filip\\OneDrive\\Documents\\GitHub\\gaming-platform\\GamingPlatform\\GamingPlatform\\Service\\Implementation\\UserService.cs",
               "RelativeDocumentMoniker": "Service\\Implementation\\UserService.cs",
@@ -176,12 +354,11 @@
               "RelativeToolTip": "Service\\Implementation\\UserService.cs",
               "ViewState": "AQIAABkAAAAAAAAAAAAkwDQAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-15T19:01:53.153Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-15T19:01:53.153Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 20,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Users\\filip\\OneDrive\\Documents\\GitHub\\gaming-platform\\GamingPlatform\\GamingPlatform\\Web\\Views\\Game\\Edit.cshtml",
               "RelativeDocumentMoniker": "Web\\Views\\Game\\Edit.cshtml",
@@ -189,12 +366,11 @@
               "RelativeToolTip": "Web\\Views\\Game\\Edit.cshtml",
               "ViewState": "AQIAADQAAAAAAAAAAADwvzcAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-15T19:14:00.556Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-15T19:14:00.556Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 19,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\Users\\filip\\OneDrive\\Documents\\GitHub\\gaming-platform\\GamingPlatform\\GamingPlatform\\Web\\Views\\HighScore\\Details.cshtml",
               "RelativeDocumentMoniker": "Web\\Views\\HighScore\\Details.cshtml",
@@ -202,12 +378,11 @@
               "RelativeToolTip": "Web\\Views\\HighScore\\Details.cshtml",
               "ViewState": "AQIAABIAAAAAAAAAAAAAABUAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-15T19:18:45.438Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-15T19:18:45.438Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 18,
               "Title": "UserRepository.cs",
               "DocumentMoniker": "C:\\Users\\filip\\OneDrive\\Documents\\GitHub\\gaming-platform\\GamingPlatform\\GamingPlatform\\Repository\\Implementation\\UserRepository.cs",
               "RelativeDocumentMoniker": "Repository\\Implementation\\UserRepository.cs",
@@ -215,12 +390,11 @@
               "RelativeToolTip": "Repository\\Implementation\\UserRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-15T19:21:32.771Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-15T19:21:32.771Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 17,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\filip\\OneDrive\\Documents\\GitHub\\gaming-platform\\GamingPlatform\\GamingPlatform\\Domain\\DomainModels\\User.cs",
               "RelativeDocumentMoniker": "Domain\\DomainModels\\User.cs",
@@ -228,12 +402,11 @@
               "RelativeToolTip": "Domain\\DomainModels\\User.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-15T19:21:58.524Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-15T19:21:58.524Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 21,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\filip\\OneDrive\\Documents\\GitHub\\gaming-platform\\GamingPlatform\\GamingPlatform\\Web\\Views\\HighScore\\Index.cshtml",
               "RelativeDocumentMoniker": "Web\\Views\\HighScore\\Index.cshtml",
@@ -241,12 +414,11 @@
               "RelativeToolTip": "Web\\Views\\HighScore\\Index.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-15T19:10:51.078Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-15T19:10:51.078Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 24,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "C:\\Users\\filip\\OneDrive\\Documents\\GitHub\\gaming-platform\\GamingPlatform\\GamingPlatform\\Repository\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "Repository\\ApplicationDbContext.cs",
@@ -254,12 +426,11 @@
               "RelativeToolTip": "Repository\\ApplicationDbContext.cs",
               "ViewState": "AQIAABYAAAAAAAAAAAAgwBgAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-15T19:05:56.228Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-15T19:05:56.228Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 25,
               "Title": "Developer.cs",
               "DocumentMoniker": "C:\\Users\\filip\\OneDrive\\Documents\\GitHub\\gaming-platform\\GamingPlatform\\GamingPlatform\\Domain\\DomainModels\\Developer.cs",
               "RelativeDocumentMoniker": "Domain\\DomainModels\\Developer.cs",
@@ -267,12 +438,11 @@
               "RelativeToolTip": "Domain\\DomainModels\\Developer.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAA4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-15T19:04:21.718Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-15T19:04:21.718Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 23,
               "Title": "20240915190625_Initial.cs",
               "DocumentMoniker": "C:\\Users\\filip\\OneDrive\\Documents\\GitHub\\gaming-platform\\GamingPlatform\\GamingPlatform\\Repository\\Migrations\\20240915190625_Initial.cs",
               "RelativeDocumentMoniker": "Repository\\Migrations\\20240915190625_Initial.cs",
@@ -280,25 +450,11 @@
               "RelativeToolTip": "Repository\\Migrations\\20240915190625_Initial.cs",
               "ViewState": "AQIAAJUAAAAAAAAAAAAYwKQAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-15T19:06:25.628Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-15T19:06:25.628Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "GameService.cs",
-              "DocumentMoniker": "C:\\Users\\filip\\OneDrive\\Documents\\GitHub\\gaming-platform\\GamingPlatform\\GamingPlatform\\Service\\Implementation\\GameService.cs",
-              "RelativeDocumentMoniker": "Service\\Implementation\\GameService.cs",
-              "ToolTip": "C:\\Users\\filip\\OneDrive\\Documents\\GitHub\\gaming-platform\\GamingPlatform\\GamingPlatform\\Service\\Implementation\\GameService.cs",
-              "RelativeToolTip": "Service\\Implementation\\GameService.cs",
-              "ViewState": "AQIAADQAAAAAAAAAAAAYwEkAAAA0AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-15T19:01:35.447Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 26,
               "Title": "HighScore.cs",
               "DocumentMoniker": "C:\\Users\\filip\\OneDrive\\Documents\\GitHub\\gaming-platform\\GamingPlatform\\GamingPlatform\\Domain\\DomainModels\\HighScore.cs",
               "RelativeDocumentMoniker": "Domain\\DomainModels\\HighScore.cs",
@@ -306,8 +462,7 @@
               "RelativeToolTip": "Domain\\DomainModels\\HighScore.cs",
               "ViewState": "AQIAAAIAAAAAAAAAAAAgwAUAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-15T19:00:57.253Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-15T19:00:57.253Z"
             }
           ]
         },

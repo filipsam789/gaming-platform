@@ -7,6 +7,7 @@ using Service.Interface;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using IntegratedSystems.Web.Controllers;
+using IntegratedSystems.Domain;
 
 internal class Program
 {
@@ -17,6 +18,9 @@ internal class Program
         // Add services to the container.
         var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ??
                                throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
+
+        builder.Services.Configure<MailSettings>(builder.Configuration.GetSection("EmailSettings"));
+
         builder.Services.AddDbContext<ApplicationDbContext>(options =>
             options.UseSqlServer(connectionString));
         builder.Services.AddDatabaseDeveloperPageExceptionFilter();
@@ -32,9 +36,11 @@ internal class Program
         builder.Services.AddScoped<IUserRepository, UserRepository>();
         builder.Services.AddTransient<IGameService, GameService>();
         builder.Services.AddTransient<IUsersService, UserService>();
+        builder.Services.AddTransient<IEmailService, EmailService>();
 
         builder.Services.AddScoped<IHighScoreService, HighScoreService>();
-var app = builder.Build();
+
+        var app = builder.Build();
 
         // Configure the HTTP request pipeline.
         if (app.Environment.IsDevelopment())

@@ -173,7 +173,7 @@ namespace IntegratedSystems.Web.Controllers
                 GameId = id,
                 UserId = Guid.Parse(userId),
                 PlayerName = player.FirstName,
-                GameName = _gameService.GetGameById(id).Name,
+                Game = _gameService.GetGameById(id),
             };
 
             return View(model);

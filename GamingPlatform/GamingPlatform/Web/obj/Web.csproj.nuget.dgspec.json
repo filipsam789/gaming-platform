@@ -1,25 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "/Users/babyspice110/Documents/GitHub/gaming-platform/GamingPlatform/GamingPlatform/Web/Web.csproj": {}
+    "C:\\Users\\filip\\OneDrive\\Documents\\GitHub\\gaming-platform\\GamingPlatform\\GamingPlatform\\Web\\Web.csproj": {}
   },
   "projects": {
-    "/Users/babyspice110/Documents/GitHub/gaming-platform/GamingPlatform/GamingPlatform/Domain/Domain.csproj": {
+    "C:\\Users\\filip\\OneDrive\\Documents\\GitHub\\gaming-platform\\GamingPlatform\\GamingPlatform\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/babyspice110/Documents/GitHub/gaming-platform/GamingPlatform/GamingPlatform/Domain/Domain.csproj",
+        "projectUniqueName": "C:\\Users\\filip\\OneDrive\\Documents\\GitHub\\gaming-platform\\GamingPlatform\\GamingPlatform\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "/Users/babyspice110/Documents/GitHub/gaming-platform/GamingPlatform/GamingPlatform/Domain/Domain.csproj",
-        "packagesPath": "/Users/babyspice110/.nuget/packages/",
-        "outputPath": "/Users/babyspice110/Documents/GitHub/gaming-platform/GamingPlatform/GamingPlatform/Domain/obj/",
+        "projectPath": "C:\\Users\\filip\\OneDrive\\Documents\\GitHub\\gaming-platform\\GamingPlatform\\GamingPlatform\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\filip\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\filip\\OneDrive\\Documents\\GitHub\\gaming-platform\\GamingPlatform\\GamingPlatform\\Domain\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/babyspice110/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\filip\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -68,34 +75,41 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.401/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/babyspice110/Documents/GitHub/gaming-platform/GamingPlatform/GamingPlatform/Repository/Repository.csproj": {
+    "C:\\Users\\filip\\OneDrive\\Documents\\GitHub\\gaming-platform\\GamingPlatform\\GamingPlatform\\Repository\\Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/babyspice110/Documents/GitHub/gaming-platform/GamingPlatform/GamingPlatform/Repository/Repository.csproj",
+        "projectUniqueName": "C:\\Users\\filip\\OneDrive\\Documents\\GitHub\\gaming-platform\\GamingPlatform\\GamingPlatform\\Repository\\Repository.csproj",
         "projectName": "Repository",
-        "projectPath": "/Users/babyspice110/Documents/GitHub/gaming-platform/GamingPlatform/GamingPlatform/Repository/Repository.csproj",
-        "packagesPath": "/Users/babyspice110/.nuget/packages/",
-        "outputPath": "/Users/babyspice110/Documents/GitHub/gaming-platform/GamingPlatform/GamingPlatform/Repository/obj/",
+        "projectPath": "C:\\Users\\filip\\OneDrive\\Documents\\GitHub\\gaming-platform\\GamingPlatform\\GamingPlatform\\Repository\\Repository.csproj",
+        "packagesPath": "C:\\Users\\filip\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\filip\\OneDrive\\Documents\\GitHub\\gaming-platform\\GamingPlatform\\GamingPlatform\\Repository\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/babyspice110/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\filip\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/babyspice110/Documents/GitHub/gaming-platform/GamingPlatform/GamingPlatform/Domain/Domain.csproj": {
-                "projectPath": "/Users/babyspice110/Documents/GitHub/gaming-platform/GamingPlatform/GamingPlatform/Domain/Domain.csproj"
+              "C:\\Users\\filip\\OneDrive\\Documents\\GitHub\\gaming-platform\\GamingPlatform\\GamingPlatform\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\filip\\OneDrive\\Documents\\GitHub\\gaming-platform\\GamingPlatform\\GamingPlatform\\Domain\\Domain.csproj"
               }
             }
           }
@@ -154,37 +168,44 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.401/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/babyspice110/Documents/GitHub/gaming-platform/GamingPlatform/GamingPlatform/Service/Service.csproj": {
+    "C:\\Users\\filip\\OneDrive\\Documents\\GitHub\\gaming-platform\\GamingPlatform\\GamingPlatform\\Service\\Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/babyspice110/Documents/GitHub/gaming-platform/GamingPlatform/GamingPlatform/Service/Service.csproj",
+        "projectUniqueName": "C:\\Users\\filip\\OneDrive\\Documents\\GitHub\\gaming-platform\\GamingPlatform\\GamingPlatform\\Service\\Service.csproj",
         "projectName": "Service",
-        "projectPath": "/Users/babyspice110/Documents/GitHub/gaming-platform/GamingPlatform/GamingPlatform/Service/Service.csproj",
-        "packagesPath": "/Users/babyspice110/.nuget/packages/",
-        "outputPath": "/Users/babyspice110/Documents/GitHub/gaming-platform/GamingPlatform/GamingPlatform/Service/obj/",
+        "projectPath": "C:\\Users\\filip\\OneDrive\\Documents\\GitHub\\gaming-platform\\GamingPlatform\\GamingPlatform\\Service\\Service.csproj",
+        "packagesPath": "C:\\Users\\filip\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\filip\\OneDrive\\Documents\\GitHub\\gaming-platform\\GamingPlatform\\GamingPlatform\\Service\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/babyspice110/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\filip\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/babyspice110/Documents/GitHub/gaming-platform/GamingPlatform/GamingPlatform/Domain/Domain.csproj": {
-                "projectPath": "/Users/babyspice110/Documents/GitHub/gaming-platform/GamingPlatform/GamingPlatform/Domain/Domain.csproj"
+              "C:\\Users\\filip\\OneDrive\\Documents\\GitHub\\gaming-platform\\GamingPlatform\\GamingPlatform\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\filip\\OneDrive\\Documents\\GitHub\\gaming-platform\\GamingPlatform\\GamingPlatform\\Domain\\Domain.csproj"
               },
-              "/Users/babyspice110/Documents/GitHub/gaming-platform/GamingPlatform/GamingPlatform/Repository/Repository.csproj": {
-                "projectPath": "/Users/babyspice110/Documents/GitHub/gaming-platform/GamingPlatform/GamingPlatform/Repository/Repository.csproj"
+              "C:\\Users\\filip\\OneDrive\\Documents\\GitHub\\gaming-platform\\GamingPlatform\\GamingPlatform\\Repository\\Repository.csproj": {
+                "projectPath": "C:\\Users\\filip\\OneDrive\\Documents\\GitHub\\gaming-platform\\GamingPlatform\\GamingPlatform\\Repository\\Repository.csproj"
               }
             }
           }
@@ -204,9 +225,17 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "MailKit": {
+              "target": "Package",
+              "version": "[4.7.1.1, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[8.0.2, )"
+            },
+            "MimeKit": {
+              "target": "Package",
+              "version": "[4.7.1, )"
             }
           },
           "imports": [
@@ -225,40 +254,47 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.401/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/babyspice110/Documents/GitHub/gaming-platform/GamingPlatform/GamingPlatform/Web/Web.csproj": {
+    "C:\\Users\\filip\\OneDrive\\Documents\\GitHub\\gaming-platform\\GamingPlatform\\GamingPlatform\\Web\\Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/babyspice110/Documents/GitHub/gaming-platform/GamingPlatform/GamingPlatform/Web/Web.csproj",
+        "projectUniqueName": "C:\\Users\\filip\\OneDrive\\Documents\\GitHub\\gaming-platform\\GamingPlatform\\GamingPlatform\\Web\\Web.csproj",
         "projectName": "Web",
-        "projectPath": "/Users/babyspice110/Documents/GitHub/gaming-platform/GamingPlatform/GamingPlatform/Web/Web.csproj",
-        "packagesPath": "/Users/babyspice110/.nuget/packages/",
-        "outputPath": "/Users/babyspice110/Documents/GitHub/gaming-platform/GamingPlatform/GamingPlatform/Web/obj/",
+        "projectPath": "C:\\Users\\filip\\OneDrive\\Documents\\GitHub\\gaming-platform\\GamingPlatform\\GamingPlatform\\Web\\Web.csproj",
+        "packagesPath": "C:\\Users\\filip\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\filip\\OneDrive\\Documents\\GitHub\\gaming-platform\\GamingPlatform\\GamingPlatform\\Web\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/babyspice110/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\filip\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/babyspice110/Documents/GitHub/gaming-platform/GamingPlatform/GamingPlatform/Domain/Domain.csproj": {
-                "projectPath": "/Users/babyspice110/Documents/GitHub/gaming-platform/GamingPlatform/GamingPlatform/Domain/Domain.csproj"
+              "C:\\Users\\filip\\OneDrive\\Documents\\GitHub\\gaming-platform\\GamingPlatform\\GamingPlatform\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\filip\\OneDrive\\Documents\\GitHub\\gaming-platform\\GamingPlatform\\GamingPlatform\\Domain\\Domain.csproj"
               },
-              "/Users/babyspice110/Documents/GitHub/gaming-platform/GamingPlatform/GamingPlatform/Repository/Repository.csproj": {
-                "projectPath": "/Users/babyspice110/Documents/GitHub/gaming-platform/GamingPlatform/GamingPlatform/Repository/Repository.csproj"
+              "C:\\Users\\filip\\OneDrive\\Documents\\GitHub\\gaming-platform\\GamingPlatform\\GamingPlatform\\Repository\\Repository.csproj": {
+                "projectPath": "C:\\Users\\filip\\OneDrive\\Documents\\GitHub\\gaming-platform\\GamingPlatform\\GamingPlatform\\Repository\\Repository.csproj"
               },
-              "/Users/babyspice110/Documents/GitHub/gaming-platform/GamingPlatform/GamingPlatform/Service/Service.csproj": {
-                "projectPath": "/Users/babyspice110/Documents/GitHub/gaming-platform/GamingPlatform/GamingPlatform/Service/Service.csproj"
+              "C:\\Users\\filip\\OneDrive\\Documents\\GitHub\\gaming-platform\\GamingPlatform\\GamingPlatform\\Service\\Service.csproj": {
+                "projectPath": "C:\\Users\\filip\\OneDrive\\Documents\\GitHub\\gaming-platform\\GamingPlatform\\GamingPlatform\\Service\\Service.csproj"
               }
             }
           }
@@ -332,7 +368,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.401/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

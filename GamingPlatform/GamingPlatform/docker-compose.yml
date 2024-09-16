@@ -1,0 +1,32 @@
+version: '3.4'
+
+services:
+  Domain:
+    image: filipsam789/is_project_domain
+    build:
+      context: ./Domain
+      dockerfile: Dockerfile
+    ports:
+      - "5001:80"
+
+  Repository:
+    image: filipsam789/is_project_repository
+    build:
+      context: ./Repository
+      dockerfile: Dockerfile
+    ports:
+      - "5002:80"
+  Service:
+    image: filipsam789/is_project_service
+    build:
+      context: ./Service
+      dockerfile: Dockerfile
+    ports:
+      - "5003:80"
+  Web:
+    image: filipsam789/is_project_web
+    build:
+      context: ./Web
+      dockerfile: Dockerfile
+    ports:
+      - "5004:80"
