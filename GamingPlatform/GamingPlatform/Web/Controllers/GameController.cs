@@ -15,7 +15,6 @@ using IntegratedSystems.Domain.IdentityModels;
 using AutoMapper;
 namespace IntegratedSystems.Web.Controllers
 {
-    [Authorize]
     public class GameController : Controller
     {
         private readonly IGameService _gameService;
@@ -37,6 +36,7 @@ namespace IntegratedSystems.Web.Controllers
             return View(_gameService.GetGames());
         }
 
+        [Authorize]
         // GET: Games/Details/5
         public IActionResult Details(Guid? id)
         {
@@ -55,7 +55,7 @@ namespace IntegratedSystems.Web.Controllers
 
             return View(game);
         }
-
+        
         // GET: Games/Create
         [Authorize(Roles = "Developer")]
         public IActionResult Create()
@@ -203,6 +203,7 @@ namespace IntegratedSystems.Web.Controllers
             return View(model);
         }
 
+        [Authorize]
         public IActionResult Error()
         {
             return View();

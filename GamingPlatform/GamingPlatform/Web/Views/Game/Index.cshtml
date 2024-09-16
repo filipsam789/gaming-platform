@@ -10,7 +10,6 @@
 }
 
 <h1 class="text-center mb-4" style="color: #13274F;">Games List</h1>
-
 @if (User.IsInRole("Developer") || User.IsInRole("Admin"))
 {
     <p class="text-center mb-4">
@@ -44,7 +43,7 @@
                 <td>@item.Genre</td>
                 <td>@item.Version</td>
                 <td>@item.ReleaseDate.ToString("d")</td>
-                <td>@item.Price</td>
+                <td>$@item.Price </td>
                 
                 <td>
                         @if (User.IsInRole("Developer") || User.IsInRole("Admin"))
