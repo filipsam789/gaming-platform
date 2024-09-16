@@ -3,9 +3,11 @@
 @using Microsoft.AspNetCore.Identity
 @inject UserManager<GamingPlatformUser> UserManager
 
+
 @{
 ViewData["Title"] = "Details";
 Layout = "~/Views/Shared/_Layout.cshtml";
+var developerEmail = Model?.Developer?.GamingPlatformUser?.Email ?? "Unknown Developer";
 }
 
 <h1 class="text-center mb-4" style="color: #13274F;">Game Details</h1>
@@ -73,6 +75,14 @@ Layout = "~/Views/Shared/_Layout.cshtml";
                         @Model.ReleaseDate.ToShortDateString()
                     </td>
                 </tr>
+                <tr>
+                    <th class="text-nowrap">
+                        Developer
+                    </th>
+                    <td>
+                        @developerEmail
+                    </td>
+                </tr>
                 </tbody>
             </table>
             <div class="text-center mt-4">
@@ -104,7 +114,7 @@ Layout = "~/Views/Shared/_Layout.cshtml";
                         Date Achieved
                     </th>
                     <th>
-                        User ID
+                        Player
                     </th>
                 </tr>
                 </thead>
@@ -115,6 +125,9 @@ Layout = "~/Views/Shared/_Layout.cshtml";
                 }
                 @foreach (var highScore in sortedHighScores)
                 {
+                    string userIdString = highScore.UserId.HasValue ? highScore.UserId.Value.ToString() : null;
+                    var user = userIdString != null ? await UserManager.FindByIdAsync(userIdString) : null;
+                    var userName = user != null ? user.Email : "Unknown User";
                     <tr>
                         <td>
                             @i
@@ -126,7 +139,7 @@ Layout = "~/Views/Shared/_Layout.cshtml";
                             @highScore.DateAchieved.ToShortDateString()
                         </td>
                         <td>
-                            @highScore.UserId
+                            @userName
                         </td>
                     </tr>
                     i++;

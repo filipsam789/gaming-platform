@@ -35,12 +35,16 @@
             }
             @foreach (var highScore in Model)
             {
+                string userIdString = highScore.UserId.HasValue ? highScore.UserId.Value.ToString() : null;
+                var userfor = userIdString != null ? await UserManager.FindByIdAsync(userIdString) : null;
+                var userName = userfor != null ? userfor.Email : "Unknown User";
+
                 <tr>
                     <td>@i</td>
                     <td>@highScore.Game.Name</td>
                     <td>@highScore.Score</td>
                     <td>@highScore.DateAchieved.ToString("d")</td>
-                    <td>@highScore.UserId</td>
+                    <td>@userName</td>
                     <td>
                         <a asp-action="Details" asp-route-id="@highScore.Id" class="btn btn-info btn-sm" style="border-color: #ffcd39; background-color: #ffcd39; color: white;">Details</a>
                         @if (User.IsInRole("User") && highScore.UserId==Guid.Parse(user.Id))

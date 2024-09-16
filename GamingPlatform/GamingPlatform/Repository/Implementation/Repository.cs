@@ -27,7 +27,9 @@ namespace Repository.Implementation
             {
                 return entities
                     .Include("Developer")
+                    .Include("Developer.GamingPlatformUser")
                     .Include("HighScores")
+                    .Include("HighScores.User")
                     .AsEnumerable();
             }
             else if (typeof(T).IsAssignableFrom(typeof(HighScore)))
@@ -62,6 +64,7 @@ namespace Repository.Implementation
             {
                 return entities
                     .Include("Developer")
+                    .Include("Developer.GamingPlatformUser")
                     .Include("HighScores")
                     .First(s => s.Id == id);
             }
