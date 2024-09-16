@@ -6,6 +6,9 @@
 ViewData["Title"] = "Details";
 Layout = "~/Views/Shared/_Layout.cshtml";
 var user = UserManager.GetUserAsync(User).Result;
+string userIdString = Model.UserId.HasValue ? Model.UserId.Value.ToString() : null;
+var userfor = userIdString != null ? await UserManager.FindByIdAsync(userIdString) : null;
+var userName = userfor != null ? userfor.Email : "Unknown User";
 }
 
 <h1 class="text-center mb-4" style="color: #13274F;">High Score Details</h1>
@@ -17,6 +20,7 @@ var user = UserManager.GetUserAsync(User).Result;
             <h4 class="mb-3">High Score Information</h4>
             <table class="table table-bordered">
                 <tbody>
+                
                 <tr>
                     <th class="text-nowrap">
                         Game
@@ -30,7 +34,7 @@ var user = UserManager.GetUserAsync(User).Result;
                         Player
                     </th>
                     <td>
-                        @Model.UserId
+                        @userName
                     </td>
                 </tr>
                 <tr>

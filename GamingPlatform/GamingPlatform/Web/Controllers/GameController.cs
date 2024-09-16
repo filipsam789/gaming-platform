@@ -40,12 +40,14 @@ namespace IntegratedSystems.Web.Controllers
         // GET: Games/Details/5
         public IActionResult Details(Guid? id)
         {
+            
             if (id == null)
             {
                 return NotFound();
             }
 
             var game = _gameService.GetGameById(id);
+            
             if (game == null)
             {
                 return NotFound();

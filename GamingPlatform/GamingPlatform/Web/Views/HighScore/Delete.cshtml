@@ -1,8 +1,22 @@
 ﻿@model IntegratedSystems.Domain.DomainModels.HighScore
+@using IntegratedSystems.Domain.DomainModels
+@using IntegratedSystems.Domain.IdentityModels
+@using Microsoft.AspNetCore.Identity
+@using Microsoft.AspNetCore.Mvc.TagHelpers
+@using Service.Interface
+@inject UserManager<GamingPlatformUser> UserManager
+@inject IGameService GameService 
+
 
 @{
 ViewData["Title"] = "Delete";
 Layout = "~/Views/Shared/_Layout.cshtml";
+
+var game = GameService.GetGameById(Model.GameId);
+var user = await UserManager.FindByIdAsync(Model.UserId.ToString());
+
+var gameName = game?.Name ?? "Unknown Game";
+var userName = user?.UserName ?? "Unknown User";
 }
 
 <h1 class="text-center mb-4" style="color: #3C3D37;">Delete High Score</h1>
@@ -14,18 +28,12 @@ Layout = "~/Views/Shared/_Layout.cshtml";
         <div class="p-4 rounded bg-light">
             <h4 class="mb-3">High Score Details</h4>
             <dl class="row">
-                <dt class="col-sm-3">
-                    @Html.DisplayNameFor(model => model.GameId)
-                </dt>
-                <dd class="col-sm-9">
-                    @Html.DisplayFor(model => model.GameId)
-                </dd>
-                <dt class="col-sm-3">
-                    @Html.DisplayNameFor(model => model.UserId)
-                </dt>
-                <dd class="col-sm-9">
-                    @Html.DisplayFor(model => model.UserId)
-                </dd>
+                <dt class="col-sm-3">Game</dt>
+                <dd class="col-sm-9">@gameName</dd>
+
+                <dt class="col-sm-3">Player</dt>
+                <dd class="col-sm-9">@userName</dd>
+
                 <dt class="col-sm-3">
                     @Html.DisplayNameFor(model => model.Score)
                 </dt>
