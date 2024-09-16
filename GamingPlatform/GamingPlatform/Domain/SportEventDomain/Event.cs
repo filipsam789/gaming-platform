@@ -11,8 +11,6 @@ public class Event : BaseEntity
     public DateTime StartDate { get; set; }
     public DateTime EndDate { get; set; }
     public EventType EventType { get; set; }
-    public Guid? OrganizerId { get; set; }
-    public Organizer? Organizer { get; set; }
     public string ImageUrl { get; set; }
     public double EventPrice { get; set; }
 

@@ -11,16 +11,16 @@ namespace Service.Implementation
 {
     public class SportEventService : ISportEventService
     {
-        private readonly ISportEventRepository<Event> _sportEventRepository;
+        private readonly IRepository<Event> _repository;
 
-        public SportEventService(ISportEventRepository<Event> sportEventRepository)
+        public SportEventService(IRepository<Event> repository)
         {
-            _sportEventRepository = sportEventRepository;
+            _repository = repository;
         }
 
         public List<Event> GetAll()
         {
-            return _sportEventRepository.GetAll().ToList();
+            return _repository.GetAll().ToList();
         }
     }
 }
