@@ -100,6 +100,8 @@ namespace IntegratedSystems.Web.Areas.Identity.Pages.Account
             [Required]
             public string Address { get; set; }
 
+            public string ProgrammingLanguage { get; set; }
+
             [Required]
             public string Role { get; set; }
 
@@ -150,7 +152,8 @@ namespace IntegratedSystems.Web.Areas.Identity.Pages.Account
                 {
                     user.Developer = new Developer
                     {
-                        Id = Guid.Parse(user.Id)
+                        Id = Guid.Parse(user.Id),
+                        ProgrammingLanguage = Input.ProgrammingLanguage
                     };
                     user.DeveloperId = user.Id;
                 }

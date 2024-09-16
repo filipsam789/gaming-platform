@@ -9,13 +9,13 @@
 }
 
 <h1 class="text-center mb-4" style="color: #13274F;">Leaderboard</h1>
+<p class="text-center mb-4">
 @if (User.IsInRole("User"))
 {
-    <p class="text-center mb-4">
-        <a asp-action="Create" class="btn btn-primary" style="border-color: #BCC6CC; background-color: #A2C2E2; color: white;">Record Your Highest Score</a>
-        <a asp-controller="Data" asp-action="ExportHighScores" class="btn btn-primary" style="border-color: #BCC6CC; background-color: #A2C2E2; color: white;">Export Top 10 High Scores</a>
-    </p>
+    <a asp-action="Create" class="btn btn-primary" style="border-color: #BCC6CC; background-color: #A2C2E2; color: white;">Record Your Highest Score</a>
 }
+    <a asp-controller="Data" asp-action="ExportHighScores" class="btn btn-primary" style="border-color: #BCC6CC; background-color: #A2C2E2; color: white;">Export Top 10 High Scores</a>
+</p>
 
 <div class="table-responsive">
     <table class="table">

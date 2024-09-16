@@ -41,4 +41,10 @@
     <_ContentIncludedByDefault Remove="Views\Patients\Index.cshtml" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="ExportTemplate.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

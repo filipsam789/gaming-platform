@@ -46,7 +46,7 @@
                 <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
             </div>
             <div class="form-floating mb-3">
-                <select asp-for="Input.Role" class="form-control" aria-required="true">
+                <select id="roleSelect" asp-for="Input.Role" class="form-control" aria-required="true">
                     <option value="">Select a Role</option>
                     @foreach (var role in Model.Roles)
                     {
@@ -57,6 +57,11 @@
                 <span asp-validation-for="Input.Role" class="text-danger"></span>
             </div>
 
+            <div id="programmingLanguageContainer" class="form-floating mb-3 d-none">
+                <input asp-for="Input.ProgrammingLanguage" class="form-control" aria-required="true" placeholder="Programming Language" />
+                <label asp-for="Input.ProgrammingLanguage">Programming Language</label>
+                <span asp-validation-for="Input.ProgrammingLanguage" class="text-danger"></span>
+            </div>
 
             <button id="registerSubmit" type="submit" class="w-100 btn btn-lg btn-primary">Register</button>
         </form>
@@ -95,4 +100,14 @@
 
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />
+    <script>
+        document.getElementById('roleSelect').addEventListener('change', function () {
+            var programmingLanguageContainer = document.getElementById('programmingLanguageContainer');
+            if (this.value === 'Developer') {
+                programmingLanguageContainer.classList.remove('d-none');
+            } else {
+                programmingLanguageContainer.classList.add('d-none');
+            }
+        });
+    </script>
 }
