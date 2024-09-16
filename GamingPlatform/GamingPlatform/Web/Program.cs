@@ -18,11 +18,16 @@ internal class Program
         // Add services to the container.
         var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ??
                                throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
+        var sportEventsConnectionString = builder.Configuration.GetConnectionString("SportEventsConnection") ??
+                               throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
 
         builder.Services.Configure<MailSettings>(builder.Configuration.GetSection("EmailSettings"));
 
         builder.Services.AddDbContext<ApplicationDbContext>(options =>
             options.UseSqlServer(connectionString));
+        builder.Services.AddDbContext<SportEventDbContext>(options =>
+            options.UseNpgsql(sportEventsConnectionString));
+
         builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
         builder.Services.AddDefaultIdentity<GamingPlatformUser>
@@ -34,10 +39,12 @@ internal class Program
                 options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore); ;
 
         builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+        builder.Services.AddScoped(typeof(ISportEventRepository<>), typeof(SportEventRepository<>));
         builder.Services.AddScoped<IUserRepository, UserRepository>();
         builder.Services.AddTransient<IGameService, GameService>();
         builder.Services.AddTransient<IUsersService, UserService>();
         builder.Services.AddTransient<IEmailService, EmailService>();
+        builder.Services.AddTransient<ISportEventService, SportEventService>();
 
         builder.Services.AddScoped<IHighScoreService, HighScoreService>();
 
