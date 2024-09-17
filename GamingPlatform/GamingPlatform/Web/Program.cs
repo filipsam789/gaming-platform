@@ -21,6 +21,10 @@ internal class Program
         var sportEventsConnectionString = builder.Configuration.GetConnectionString("SportEventsConnection") ??
                                throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
 
+        builder.Logging.ClearProviders();
+        builder.Logging.AddConsole();
+        builder.Logging.AddDebug();
+
         builder.Services.Configure<MailSettings>(builder.Configuration.GetSection("EmailSettings"));
 
         builder.Services.AddDbContext<ApplicationDbContext>(options =>

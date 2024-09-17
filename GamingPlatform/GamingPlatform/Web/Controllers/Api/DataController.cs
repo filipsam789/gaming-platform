@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using System.Text;
 
-namespace IntegratedSystems.Web.Controllers
+namespace IntegratedSystems.Web.Controllers.Api
 {
     [Route("api/[controller]")]
     [ApiController]
@@ -26,7 +26,7 @@ namespace IntegratedSystems.Web.Controllers
                 workBook.Worksheets.TryGetWorksheet("High Scores", out IXLWorksheet worksheet);
 
                 HttpClient client = new HttpClient();
-                string URL = "http://localhost:5176/api/HighScoreApi/";
+                string URL = "https://gamingplatform-c3gec8exfxbxd7d3.italynorth-01.azurewebsites.net/api/HighScoreApi/";
 
                 HttpResponseMessage response = client.GetAsync(URL).Result;
 
@@ -38,7 +38,8 @@ namespace IntegratedSystems.Web.Controllers
                     worksheet.Cell(i + 8, 3).Value = highScore.Game.Name;
                     worksheet.Cell(i + 8, 4).Value = highScore.Score;
                     worksheet.Cell(i + 8, 5).Value = highScore.DateAchieved;
-                    worksheet.Cell(i + 8, 6).Value = highScore.User.GamingPlatformUser.UserName;
+                    if (highScore.User != null && highScore.User.GamingPlatformUser != null)
+                        worksheet.Cell(i + 8, 6).Value = highScore.User.GamingPlatformUser.UserName;
                 }
 
                 using (var stream = new MemoryStream())
